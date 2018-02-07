@@ -1,0 +1,78 @@
+import java.util.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.lang.*;
+
+public class MinimumUniqueArraySum {
+		
+	static int getMinimumUniqueSum(int[]arr){
+		
+		int length=arr.length;
+		int[] dup=new int[arr.length];
+		for(int i=0;i<length-1;i++){
+			for(int j=i+1;j<length;j++){
+				if(arr[i]==arr[j]){
+					dup[i]=arr[i];
+				}
+			}
+		}
+		
+		Arrays.sort(arr);
+		for(int i=0;i<dup.length;i++){
+			for(int j=0;j<length;j++){
+				if(dup[i]==arr[j]){
+					dup[i]=dup[i]+1;
+				}				
+			}
+		}
+		
+		int mergeArr[]=new int[length + dup.length];
+		int k=0,l=0,m=0;
+		while(l<length){
+			mergeArr[k]=arr[l];
+			k++;
+			l++;
+		}
+		while(m<dup.length){
+			mergeArr[k]=dup[m];
+			k++;
+			m++;
+		}
+		for(int a:mergeArr){
+			System.out.println(a);
+		}
+		return 0;		
+	}
+		
+	public static void main(String[] args) throws IOException {
+        Scanner in = new Scanner(System.in);
+        final String fileName = System.getenv("OUTPUT_PATH");
+        BufferedWriter bw = null;
+        if (fileName != null) {
+            bw = new BufferedWriter(new FileWriter(fileName));
+        }
+        else {
+            bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        }
+
+        int res;
+        int arr_size = 0;
+        arr_size = Integer.parseInt(in.nextLine().trim());
+
+        int[] arr = new int[arr_size];
+        for(int i = 0; i < arr_size; i++) {
+            int arr_item;
+            arr_item = Integer.parseInt(in.nextLine().trim());
+            arr[i] = arr_item;
+        }
+
+        res = getMinimumUniqueSum(arr);
+        bw.write(String.valueOf(res));
+        bw.newLine();
+
+        bw.close();
+    }
+}
+

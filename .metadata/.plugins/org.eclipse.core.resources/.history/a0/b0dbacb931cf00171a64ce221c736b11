@@ -1,0 +1,118 @@
+import java.util.Scanner;
+
+
+public class EmployeeDetails {
+
+
+	public static String [][] searchByName(String str[][],String name){
+		String arr[][]=new String[3][4];
+		for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				if(str[i][j].contains(name)){
+					for(int k=0;k<4;k++){
+						arr[i][k]+=str[i][k];						
+					}									
+				}				
+			}
+		}
+		return arr;
+	}
+	public static void searchByDept(String str[][],String dept){
+		for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				if(str[i][j].contains(dept)){
+					for(int k=0;k<4;k++){
+						System.out.print(str[i][k]+" "+"\n");	
+					}					
+				}else{
+					System.out.println("No data found for "+dept);
+				}
+			}
+		}
+		
+	}
+	public static void searchByPhone(String str[][],String phone){
+		for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				if(str[i][j].contains(phone)){
+					for(int k=0;k<4;k++){
+						System.out.print(str[i][k]+" "+"\n");	
+					}					
+				}else{
+					System.out.println("No data found for "+phone);
+				}
+			}
+		}
+	}
+	public static void searchByAddress(String str[][],String add){
+		for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				if(str[i][j].contains(add)){
+					for(int k=0;k<4;k++){
+						System.out.print(str[i][k]+" "+"\n");	
+					}					
+				}else{
+					System.out.println("No data found for "+add);
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [][]str=new String[3][4];
+		
+	Scanner kb=new Scanner(System.in);		
+	for(int i=0;i<3;i++){
+		System.out.println("Enter your Name, Department, Phone, Address");
+		for(int j=0;j<4;j++){
+			if(j==0){
+				
+				str[i][j]=kb.nextLine();
+			}else if(j==1){
+				
+				str[i][j]=kb.nextLine();
+			}else if(j==2){
+				
+				str[i][j]=kb.nextLine();
+			}else if(j==3){
+				
+				str[i][j]=kb.nextLine();
+			}
+			
+		}
+	}
+		/*for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				System.out.print(str[i][j]);
+			}
+		}*/
+
+		System.out.println("Enter the criteria to search\n 1. Name\n 2. Dept\n 3. phone\n 4. Address\n");
+		int choice=kb.nextInt();
+		switch(choice){
+		case 1: System.out.println("Enter name to search");
+		        String name;
+		        name=kb.next();
+				String arr[][]=EmployeeDetails.searchByName(str, name);
+				for(String[] s:arr){
+					System.out.println(s.toString());
+				}
+				break;
+		case 2: System.out.println("Enter dept to search");
+		        String dept=kb.next();
+				EmployeeDetails.searchByDept(str, dept);
+				break;
+		case 3: System.out.println("Enter phone to search");
+		        String phone=kb.next();
+				EmployeeDetails.searchByPhone(str, phone);
+				break;
+		case 4: System.out.println("Enter address to search");
+		        String add=kb.next();
+				EmployeeDetails.searchByAddress(str, add);
+				break;
+		default :System.out.println("Enter correct");
+		}
+		
+	}
+
+}

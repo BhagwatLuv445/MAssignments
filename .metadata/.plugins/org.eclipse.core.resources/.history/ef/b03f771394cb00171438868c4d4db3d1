@@ -1,0 +1,30 @@
+package String1;
+
+public class StringMan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*String s="Bhagwat";
+		String s1=new String("Bhagwat");
+		System.out.println(s);
+		System.out.println(s1);*/
+		//char []ch={'a','b','c'};
+		//String s=new String(ch);
+		//System.out.println(s);
+		
+		/*
+		Strin1g s="Mindtree";
+		s.concat("Kalinga");
+		System.out.println(s);*/
+		
+		String s1="Mindtree";
+		String s2="Mindtree";
+		String s3=new String("Mindtree");
+		String s4="Kalinga";
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals(s3));
+		System.out.println(s1.equals(s4));
+			
+	}
+
+}

@@ -1,0 +1,34 @@
+package SortingMethods;
+
+public class BinarySearch {
+
+	public static int binarySearch(int []arr,int lowerIndex, int higherIndex,int searchElement ){
+		if(higherIndex>=lowerIndex){
+			int midValue=(lowerIndex+higherIndex)/2;
+			
+			if(arr[midValue]==searchElement)
+				return midValue;
+			
+			if(arr[midValue] > searchElement)
+				return binarySearch(arr,lowerIndex,midValue-1,searchElement);
+			if(arr[midValue] < searchElement)
+				return binarySearch(arr,midValue+1,higherIndex,searchElement);
+			
+		
+		}
+		return -1;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int arr[]=new int[]{10,12,15,88,26,45,24};
+		int pos=BinarySearch.binarySearch(arr, 0,arr.length-1, 24);
+		if(pos==-1){
+			System.out.println("Element not found");
+		}
+		else{
+		System.out.println("Element found at " +(pos+1)+ " position");
+		}
+	}
+
+}

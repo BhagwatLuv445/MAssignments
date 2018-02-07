@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Isprime {
+    
+    public static void main(String[] args)  {
+    	int n=50;
+    	  int num=0,rem=0;
+        while(n>0){        
+        	rem=n%2;
+        	num=num*10+rem;
+        	n/=2;
+        }  
+        int rev=0,sum=0;
+        for(int i=1;i<num;i++){
+        	rev=num%10;
+        	sum+=rev*10;
+        	num/=10;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+	

@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Solution {
+	 static int[] minimalOperations(String[] words) {
+         int []cnt=new int[words.length];
+		    for(int i=0;i<words.length;i++)
+		    {
+		    	int count=1;
+		        int j;
+		        for(j=0;j<words[i].length()-1;j++)
+		        {
+		            if(words[i].charAt(j) == words[i].charAt(j+1))
+		            {
+		                count++;
+		            }
+		        }
+		        //if(j==arr[i].length())
+		       // System.out.println(count);		        
+		        	if(count/2==1){
+			          	  cnt[i]=1;
+			          }
+			          else {
+			        	  cnt[i]=(count+1)/2;
+			          }		          
+		    }
+			return cnt;
+	    
+ }
+	 public static void main(String[] args)  {
+
+     int[] res;
+     int word_length;
+     Scanner kb=new Scanner(System.in);
+     System.out.println("Enter the size of array");
+     word_length=kb.nextInt();
+     String[] words = new String[word_length];
+     System.out.println("Enter the values");
+     for(int i=0;i<=word_length;i++){
+    	 words[i]=kb.nextLine();
+     }
+     res = minimalOperations(words);
+     for(int j=0;j<res.length;j++){
+    	 System.out.println(res[j]);
+     }
+     }
+}

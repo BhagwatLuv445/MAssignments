@@ -1,0 +1,89 @@
+import java.util.Arrays;
+import java.lang.*;
+import java.util.Collections;
+
+
+public class HacklandElections {
+	static String electionWinner(String[] votes) {
+		int k=0;
+		//String temp=new String("a");
+		String []str=new String[votes.length];
+		for(int i=0;i<votes.length;i++){
+			for(int j=i;j<votes.length-1;j++){
+				if(votes[i]==votes[j+1]){
+					str[k]=votes[i];
+					k++;
+					//System.out.println(str[i]);
+				}
+			}
+			//System.out.println(str[i]);
+		}
+		
+		
+		String name = null ;
+	    // int z=0;
+			if(str.equals(null)){
+				Arrays.sort(votes);
+				//System.out.println(votes[z]);
+				name=votes[votes.length-1];
+				
+			}else{
+				int n = 0;
+			    for (int i = 0; i < str.length; i++)
+			        if (str[i] != null) {
+			        	n++;
+			        }
+
+			    // 2 : allocate new array
+			    String[] str1= new String[n];
+
+			    // 3 : copy not null elements
+			    int l = 0;
+			    for (int i = 0; i < str.length; i++)
+			        if (str[i] != null)
+			            str1[l++] = str[i];
+
+			    //return _localAllElements;
+			//}
+			    {					
+						Arrays.sort(str1);
+						int len=str1.length;
+						System.out.println(len);
+						name=str1[len-1];
+				//		System.out.println(str1[z]);
+						
+					}
+
+			}
+		  			
+/*for(int i=0;i<=str1.length-1;i++){
+			for(int j=0;j<=str.length-1;j++){
+				if(str1[i].compareTo(str1[i+1])>0){
+					temp=str1[i];
+					str1[i]=str1[j];
+					str1[j]=temp;
+				}
+			}
+		}
+		/*for(int i=0;i<=str.length;i++){
+			if(str[i]){
+				continue;
+			}else{
+				str[i]=str[i];
+			}
+		}*/
+		    //Arrays.sort(votes);
+		for(String s:votes){
+			//System.out.println(s);
+		}
+		//System.out.println(str);
+		return name;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str1[]=new String[]{"Veronica","Ryan","Dave","Vicotr"};
+		String res=HacklandElections.electionWinner(str1);
+		System.out.println(res);
+	}
+}

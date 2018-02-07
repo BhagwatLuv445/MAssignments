@@ -1,0 +1,22 @@
+package String1;
+
+public class StringMan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*String s="Bhagwat";
+		String s1=new String("Bhagwat");
+		System.out.println(s);
+		System.out.println(s1);*/
+		//char []ch={'a','b','c'};
+		//String s=new String(ch);
+		//System.out.println(s);
+		
+		
+		String s="Mindtree";
+		s.concat("Kalinga");
+		System.out.println(s);
+		
+	}
+
+}

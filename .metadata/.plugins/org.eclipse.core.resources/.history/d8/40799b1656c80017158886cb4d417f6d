@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Isprime {
+    
+    public static void main(String[] args)  {
+    	int n=27;
+    	  int num=0,rem=0;
+        for(int i=1;i<n;i++){
+            rem=n%2;
+            num+=rem*10;
+            
+            n/=2;
+        }  
+        System.out.println(num);
+    }
+}
+
+
+	

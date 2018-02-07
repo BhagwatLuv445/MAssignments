@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Solution {
+	 static int[] minimalOperations(String[] words) {
+         int []cnt=new int[words.length];
+		    for(int i=0;i<words.length;i++)
+		    {
+		    	int count=1;
+		        int j;
+		        for(j=0;j<words[i].length()-1;j++)
+		        {
+		            if(words[i].charAt(j) == words[i].charAt(j+1))
+		            {
+		                count++;
+		            }
+		        }		       
+		        if(count==0){
+			      	  cnt[i]=1;
+			      	  break;
+		        }
+		        else if(count/2==0){
+		        	cnt[i]=(count+4)/2;
+		        }
+			    else {
+			    	cnt[i]=(count+1)/2;
+			    }		          
+		    }
+			return cnt;
+	    
+ }
+	 public static void main(String[] args)  {
+
+     int[] res;
+     String []str=new String[4];
+     str[0]="aaaassss";
+     str[1]="asdfss";
+     str[2]="hdjsvjjhahhhdjjjkkjdjjduurc";
+     str[3]="ajjjttteejjkfir";
+     res = minimalOperations(str);
+     for(int j=0;j<res.length;j++){
+    	 System.out.println(res[j]);
+     }
+     }
+}

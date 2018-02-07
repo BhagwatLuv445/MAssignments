@@ -1,0 +1,10 @@
+package String1;
+
+public class StringMan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

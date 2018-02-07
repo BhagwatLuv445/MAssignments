@@ -1,0 +1,29 @@
+import java.util.*;
+public class Chocolate {
+	 static void calculate(int[] arr) {
+	       int num=arr.length;
+	       int count=1;
+	       for(int i=0;i<=num;i++){
+	    	   if(i%2==1){
+	    		   count+=i;
+	    		   System.out.println(count);	    		   
+	    	   }
+	    	   else{
+	    		  int c=count;
+	    		   System.out.println(c);
+	    	   }
+	       }
+	    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+	        int arr_size = 3;
+	        int[] arr = new int[arr_size];
+	        arr[0]=1;
+	        arr[1]=2; 
+	        arr[2]=3;
+	        calculate(arr);
+	        
+	}
+
+}

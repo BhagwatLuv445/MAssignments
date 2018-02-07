@@ -1,0 +1,18 @@
+
+public class Recursion {
+	public static int function(int num){
+		int fact=1;
+		fact=fact*(function(num-1));
+		return fact;
+	} 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*for(int i=1;i<=100;i++){
+			System.out.print(i+"\t");*/
+		System.out.println(function(5));
+		}		
+	}
+
+

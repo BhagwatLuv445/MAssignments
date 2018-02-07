@@ -1,0 +1,25 @@
+package BaseCampJava;
+
+class Manipulation{
+	String name;
+	
+}
+
+public class KoCapabilitiesJira {
+	static String lastLetters(String word) {
+
+	StringBuffer sb=new StringBuffer(word.substring(word.length()-1));
+	sb.append(" ");
+	sb.append(word.substring(word.length()-2,word.length()-1));
+	String res=sb.toString();
+	return res;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String word="Apple";
+		 String res = lastLetters(word);
+		 System.out.println(res);
+	}
+
+}

@@ -1,0 +1,61 @@
+import java.util.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.lang.*;
+
+public class MinimumUniqueArraySum {
+		
+	static int getMinimumUniqueSum(int[]arr){
+		
+		int length=arr.length;
+		int[] dup=new int[arr.length];
+		for(int i=0;i<length-1;i++){
+			for(int j=i+1;j<length;j++){
+				if(arr[i]==arr[j]){
+					dup[i]=arr[i];
+				}
+			}
+		}
+		
+		Arrays.sort(arr);
+		for(int i=0;i<dup.length;i++){
+			for(int j=0;j<length;j++){
+				if(dup[i]==arr[j]){
+					dup[i]=dup[i]+1;
+				}				
+			}
+		}
+		
+		int mergeArr[]=new int[length + dup.length];
+		int k=0,l=0,m=0;
+		while(l<length){
+			mergeArr[k]=arr[l];
+			k++;
+			l++;
+		}
+		while(m<dup.length){
+			mergeArr[k]=dup[m];
+			k++;
+			m++;
+		}
+		for(int a:mergeArr){
+			System.out.println(a);
+		}
+		return 0;		
+	}
+		
+	public static void main(String[] args) throws IOException {
+        Scanner in = new Scanner(System.in);
+        
+       int[] arr=new int[5];
+       for(int i=0;i<5;i++){
+    	  arr[i]= in.nextInt();
+       }
+
+       int  res = getMinimumUniqueSum(arr);
+       System.out.println(res);
+    }
+}
+

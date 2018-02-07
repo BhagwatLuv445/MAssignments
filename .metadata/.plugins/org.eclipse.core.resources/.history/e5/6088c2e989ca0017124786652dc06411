@@ -1,0 +1,21 @@
+
+public class HacklandElections {
+	static String electionWinner(String[] votes) {
+		int vote=0;
+		String []str=new String[votes.length];
+		for(int i=0;i<votes.length;i++){
+			for(int j=i;j<votes.length-1;j++){
+				if(votes[i]==votes[j+1]){
+					str[i]=votes[i];
+				}
+				System.out.println(str[i]);
+			}
+		}
+		return null;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str1[]=new String[]{"Alex","Michael","Harry","Dave","Michael","Victor","Harry","Alex","Mary","Mary"};
+	}
+}

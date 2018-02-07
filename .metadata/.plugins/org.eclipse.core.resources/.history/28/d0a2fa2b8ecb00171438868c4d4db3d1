@@ -1,0 +1,13 @@
+package String1;
+
+public class StringMan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="Bhagwat";
+		String s1=new String("Bhagwat");
+		System.out.println(s);
+		System.out.println(s1);
+	}
+
+}

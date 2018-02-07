@@ -1,0 +1,29 @@
+package Sorting;
+
+public class CountingPairs {
+
+	 static int countPairs(int[] numbers, int k) {
+	        int len=numbers.length;
+	        int dup[]=new int[numbers.length];
+	        int i = 0,j=0;
+	        while(i<len-1){
+	            while(numbers[i]==numbers[i+1]){
+	                i++;
+	            }
+	            dup[j]=numbers[i];
+	            j++;
+	            i++;
+	        }
+	        for(int a:dup);
+			return k;
+	    }
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numbers[]=new int[]{1,1,2,2,3,3};
+		int num=CountingPairs.countPairs(numbers, 2);
+		System.out.println(num);
+	}
+
+}

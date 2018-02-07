@@ -1,0 +1,21 @@
+
+public class BinaryAndCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=161;
+		int a,count=0;
+		String binary="";
+		while(n>0){
+			a=n%2;
+			if(a==1){
+				count++;
+			}
+			binary=binary+a;
+			n/=2;
+		}
+		System.out.println(count+" "+binary);
+
+	}
+
+}

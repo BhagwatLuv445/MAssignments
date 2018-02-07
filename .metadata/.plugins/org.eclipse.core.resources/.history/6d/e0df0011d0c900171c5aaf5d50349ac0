@@ -1,0 +1,23 @@
+
+public class SharingCandies {
+
+	static long getCandies(long n, long p) {
+        long smallestFactor;
+        int []arr=new int[32];
+        for(int i=(int) n;i>=1;i--){
+            if(n/i==0){
+                arr[i]=(int) (n/i);
+        }        
+    }
+       return arr[(int) p];
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		long res;
+        
+        res = getCandies(10, 3);
+        System.out.println(res);
+        	}
+
+}

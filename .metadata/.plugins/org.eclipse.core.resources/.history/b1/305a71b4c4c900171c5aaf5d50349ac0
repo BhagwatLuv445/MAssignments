@@ -1,0 +1,26 @@
+import java.util.*;
+public class Chocolate {
+	 static void calculate(int[] arr) {
+	       
+	    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Scanner in = new Scanner(System.in);
+	        int arr_size = 0;
+	        arr_size = in.nextInt();
+
+	        int[] arr = new int[arr_size];
+	        for(int i = 0; i < arr_size; i++) {
+	            int arr_item;
+	            arr_item = in.nextInt();
+	            System.out.println(arr_item);
+	            arr[i] = arr_item;
+	        }
+
+	        calculate(arr);
+	        
+	}
+
+}

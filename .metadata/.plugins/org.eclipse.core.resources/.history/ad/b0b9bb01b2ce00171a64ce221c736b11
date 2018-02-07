@@ -1,0 +1,20 @@
+
+public class Recursion {
+	public static void function(int a){
+		if(a==101){
+			return;
+		}
+		System.out.println(a+"\t");
+		function(a+1);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*for(int i=1;i<=100;i++){
+			System.out.print(i+"\t");*/
+		function(1);
+		}		
+	}
+
+

@@ -1,0 +1,31 @@
+
+import java.util.*;
+public class SearchString {
+
+	static int searchString(String []str,String search){
+		int count=0,n = 0;
+		int len=str.length;
+		for(int i=0;i<=len;i++){
+			if(search.equals(search)){
+				count++;
+			}
+		}
+		if(count==0){
+			n=-1;
+		}else{
+			n=count;
+		}
+		return n;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String []str=new String[]{"Bangalore","Delhi","Andhra","Chennai","Mumbai","Bangalore"};
+		String search="Bangalore";
+		int ocurRance=SearchString.searchString(str, search);
+		System.out.println(ocurRance);
+	}
+
+}

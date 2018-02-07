@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+
+public class EmployeeDetails {
+
+
+	public static void searchByName(String str[][],String name){
+		for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				if(str[i][j]==name){
+					for(int k=i;k<4;k++){
+						System.out.println(str[i][j]);	
+					}					
+				}
+			}
+		}
+	}
+	public static void searchByDept(String str[][],String dept){
+		
+	}
+	public static void searchByPhone(String str[][],String phone){
+		
+	}
+	public static void searchByAddress(String str[][],String add){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [][]str=new String[3][4];
+		
+	Scanner kb=new Scanner(System.in);		
+	for(int i=0;i<3;i++){			
+		for(int j=0;j<4;j++){
+			if(j==0){
+				System.out.println("Enter your name");
+				str[i][j]=kb.nextLine();
+			}else if(j==1){
+				System.out.println("Enter your Dept");
+				str[i][j]=kb.nextLine();
+			}else if(j==2){
+				System.out.println("Enter your phone");
+				str[i][j]=kb.nextLine();
+			}else if(j==3){
+				System.out.println("Enter your address");
+				str[i][j]=kb.nextLine();
+			}
+			
+		}
+	}
+		/*for(int i=0;i<3;i++){
+			for(int j=0;j<4;j++){
+				System.out.print(str[i][j]);
+			}
+		}*/
+
+		System.out.println("Enter the criteria to search\n 1. Name\n 2. Dept\n 3. phone\n 4. Address\n");
+		int choice=kb.nextInt();
+		switch(choice){
+		case 1: System.out.println("Enter name to search");
+		        String name;
+		        name=kb.next();
+				EmployeeDetails.searchByName(str, name);
+				break;
+		case 2: System.out.println("Enter dept to search");
+		        String dept=kb.next();
+				EmployeeDetails.searchByDept(str, dept);
+				break;
+		case 3: System.out.println("Enter phone to search");
+		        String phone=kb.next();
+				EmployeeDetails.searchByPhone(str, phone);
+				break;
+		case 4: System.out.println("Enter address to search");
+		        String add=kb.next();
+				EmployeeDetails.searchByAddress(str, add);
+				break;
+		default :System.out.println("Enter correct");
+		}
+	
+		
+	}
+
+}
