@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-01-29 19:07:41.465 UTC</timestamp>
+  <md5sum>ba3d27e26742d056a53500909015edd4</md5sum>
+  <fileName>Credential id=e241885f-ab81-45d5-bc8b-f51ca4e519f2 name=M1043004</fileName>
+  <usages>
+    <entry>
+      <string>FERRARI</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>dummy</string>
+      <ranges>1-12</ranges>
+    </entry>
+    <entry>
+      <string>FERRARI_F1</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>abcd</string>
+      <ranges>3-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

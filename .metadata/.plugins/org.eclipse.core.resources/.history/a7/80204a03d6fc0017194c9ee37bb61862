@@ -1,0 +1,139 @@
+package Operation;
+
+
+
+import java.util.List;
+import java.util.Properties;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class UIOperation {
+	WebDriver driver;
+
+	public UIOperation(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void perform(Properties p, String operation, String objectName, String objectType, String value)
+			throws Exception {
+		//System.out.println("");
+		if(operation != null){
+			switch (operation.toLowerCase()) {
+			case "click":
+				// Perform click
+				//driver.findElement(this.getObject(p, objectName, objectType)).click();
+				try{
+				WebElement clkElement = this.getLocator(p,  objectName, objectType);
+				Operation.click(clkElement);
+				}catch(Exception e){
+					System.out.println("Not found");
+				}
+				break;
+			case "fillText":
+				// Set text on control
+				//driver.findElement(this.getObject(p, objectName, objectType)).sendKeys(value);
+				WebElement fillElement = this.getLocator(p,  objectName, objectType);
+				Operation.enterTextField(fillElement, value);
+				break;
+
+			case "GOTOURL":
+				// Get url of application
+				driver.get(p.getProperty(value));
+				break;
+			case "clkRadio":
+				// Get text of an element
+				List<WebElement> RadioElement = this.getLocators(p,  objectName, objectType);
+				Operation.selectRadioBtn(RadioElement, value);
+				break;
+			case "chkBox":
+				List<WebElement> chkBoxElement = this.getLocators(p,  objectName, objectType);
+				Operation.selectMultipleCheck_Box(chkBoxElement, value);
+				break;
+			case "dropDown":
+				WebElement dropDownElement = this.getLocator(p,  objectName, objectType);
+				Operation.selectByVisibleText(dropDownElement, value);
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	
+/*	private By getObject(Properties p, String objectName, String objectType) throws Exception {
+		// Find by xpath
+		if (objectType.equalsIgnoreCase("XPATH")) {
+			return By.xpath(p.getProperty(objectName));
+		}
+		// find by class
+		else if (objectType.equalsIgnoreCase("CLASSNAME")) {
+
+			return By.className(p.getProperty(objectName));
+		}
+		// find by name
+		else if (objectType.equalsIgnoreCase("NAME")) {
+			return By.name(p.getProperty(objectName));
+		}
+		// Find by css
+		else if (objectType.equalsIgnoreCase("CSS")) {
+			return By.cssSelector(p.getProperty(objectName));
+		}
+		// find by link
+		else if (objectType.equalsIgnoreCase("LINK")) {
+			return By.linkText(p.getProperty(objectName));
+		}
+		// find by partial link
+		else if (objectType.equalsIgnoreCase("PARTIALLINK")) {
+			return By.partialLinkText(p.getProperty(objectName));
+		} else {
+			throw new Exception("Wrong object type");
+		}
+	}*/
+	private WebElement getLocator(Properties p, String objectName, String locatorType) throws Exception
+	{
+		/*String [] split = locator.split(":");
+		String locatorType = split[0];
+		String locatorValue = split[1];
+		*/
+		if(locatorType.toLowerCase().equals("id"))
+			return driver.findElement(By.id(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("classname") || locatorType.toLowerCase().equals("class"))
+			return driver.findElement(By.className(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("name"))
+			return driver.findElement(By.name(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("tagname") || locatorType.toLowerCase().equals("tag"))
+			return driver.findElement(By.tagName(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("linktext") || locatorType.toLowerCase().equals("text"))
+			return driver.findElement(By.linkText(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("partiallinktext"))
+			return driver.findElement(By.partialLinkText(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("cssSelector") || locatorType.toLowerCase().equals("css"))
+			return driver.findElement(By.cssSelector(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("xpath"))
+			return driver.findElement(By.xpath(p.getProperty(objectName)));
+		else 
+			throw new Exception("Unknown locator type" + locatorType);
+	}
+	
+	public List<WebElement> getLocators(Properties p, String objectName, String locatorType) throws Exception
+	{		
+		if(locatorType.toLowerCase().equals("id"))
+			return (List<WebElement>) driver.findElement(By.id(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("classname") || locatorType.toLowerCase().equals("class"))
+			return (List<WebElement>) driver.findElement(By.className(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("name"))
+			return (List<WebElement>) driver.findElement(By.name(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("tagname") || locatorType.toLowerCase().equals("tag"))
+			return (List<WebElement>) driver.findElement(By.tagName(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("linktext") || locatorType.toLowerCase().equals("text"))
+			return (List<WebElement>) driver.findElement(By.linkText(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("partiallinktext"))
+			return (List<WebElement>) driver.findElement(By.partialLinkText(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("cssSelector") || locatorType.toLowerCase().equals("css"))
+			return (List<WebElement>) driver.findElement(By.cssSelector(p.getProperty(objectName)));
+		else if(locatorType.toLowerCase().equals("xpath"))
+			return (List<WebElement>) driver.findElement(By.xpath(p.getProperty(objectName)));
+		else 
+			throw new Exception("Unknown locator type" + locatorType);
+	}
+}

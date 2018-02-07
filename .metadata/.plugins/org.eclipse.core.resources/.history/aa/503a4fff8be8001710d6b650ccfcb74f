@@ -1,0 +1,121 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class SignUp {
+
+	private WebDriver driver;
+
+	public SignUp(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(how = How.ID, using = "FirstName")
+	WebElement firstNameTextField;
+
+	@FindBy(how = How.ID, using = "LastName")
+	WebElement lastNameTextField;
+
+	@FindBy(how = How.ID, using = "RecoveryEmailAddress")
+	WebElement currentEmailTextField;
+
+	@FindBy(how = How.ID, using = "GmailAddress")
+	WebElement userNameTextField;
+
+	@FindBy(how = How.ID, using = "Passwd")
+	WebElement passwordTextField;
+
+	@FindBy(how = How.ID, using = "PasswdAgain")
+	WebElement confirmPasswordTextField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='BirthDay']")
+	WebElement dayTextField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='BirthMonth']/div[1]")
+	WebElement monthDropDownField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='BirthYear']")
+	WebElement yearTextField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='Gender']/div")
+	WebElement genderDropDownField;
+
+	@FindBy(how = How.ID, using = "RecoveryPhoneNumber")
+	WebElement mobileNumberField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id=':i']")
+	WebElement locationDropDownField;
+
+	@FindBy(how = How.ID, using = "submitbutton")
+	WebElement nextStepButton;
+
+	public void setFirstNameTextField(String firstName) {
+
+		firstNameTextField.sendKeys(firstName);
+	}
+
+	public void setLastNameTextField(String lastName) {
+		lastNameTextField.sendKeys(lastName);
+	}
+
+	public void setEmailTextField(String email) {
+		currentEmailTextField.sendKeys(email);
+	}
+
+	public void setPasswordTextField(String password) {
+		passwordTextField.sendKeys(password);
+	}
+
+	public void setConfirmPasswordTextField(String confirmPassword) {
+		confirmPasswordTextField.sendKeys(confirmPassword);
+	}
+
+	public void setDayTextField(String day) {
+
+		dayTextField.clear();
+		dayTextField.sendKeys(String.valueOf(4));
+	}
+
+	public void setMonthDropDownField(String month) throws InterruptedException {
+		monthDropDownField.sendKeys(month);
+	}
+
+	public void setYearTextField(String year) {		
+		yearTextField.sendKeys(" "+year);
+	}
+
+	public void setGendeDropDownField(String gender) {
+		genderDropDownField.sendKeys(gender);
+	}
+
+	public void setMobileNumberField(String mobileNumber) {		
+		mobileNumberField.sendKeys(String.valueOf(""+mobileNumber));
+	}
+
+	public void setLocationDropDownField(String location) throws InterruptedException {
+		locationDropDownField.sendKeys(location);
+	}
+
+	public void setUserNameTextField(String userName) {
+
+		userNameTextField.sendKeys(userName);
+	}
+
+	public void clickNextStepButton() {
+		nextStepButton.click();
+	}
+
+	public void setCurrentEmailTextField(String currentEmail) {
+		currentEmailTextField.sendKeys(currentEmail);
+	}
+}

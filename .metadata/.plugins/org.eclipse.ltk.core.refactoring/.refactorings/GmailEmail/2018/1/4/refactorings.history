@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;GmailEmail&apos;&#x0D;&#x0A;- Original project: &apos;GmailEmail&apos;&#x0D;&#x0A;- Original element: &apos;GmailEmail/src/main.java.org.testng.xslt.mavenplugin&apos;" description="Delete element" element1="/src&lt;main.java.org.testng.xslt.mavenplugin" element2="/src&lt;main.java.org.testng.xslt" element3="/src&lt;main.java.org.testng" element4="/src&lt;main.java.org" element5="/src&lt;main.java" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1516542099572" subPackages="false" version="1.0"/>
+</session>

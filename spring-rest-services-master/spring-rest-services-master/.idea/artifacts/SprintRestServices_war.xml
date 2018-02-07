@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SprintRestServices:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="spring-mvc-angularjs.war">
+      <element id="artifact" artifact-name="SprintRestServices:war exploded" />
+    </root>
+  </artifact>
+</component>

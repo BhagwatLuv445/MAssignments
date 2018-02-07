@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: mrro
+Build-Jdk: 1.8.0_131
+Extension-Name: gitflow
+Specification-Title: Perform Gitflow actions from Jenkins
+Specification-Vendor: Silpion IT-Solutions GmbH
+Implementation-Vendor: Silpion IT-Solutions GmbH
+Implementation-Title: gitflow
+Implementation-Version: 1.0.1
+Group-Id: de.silpion.jenkins.plugins
+Short-Name: gitflow
+Long-Name: Gitflow Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Gitflow+Plugin
+Plugin-Version: 1.0.1
+Hudson-Version: 2.7.4
+Jenkins-Version: 2.7.4
+Plugin-Dependencies: maven-plugin:2.13,git-client:1.19.0,git:2.4.0,gra
+ dle:1.24;resolution:=optional
+Plugin-Developers: Marc Rohlfs:marcrohlfs:Marc.Rohlfs@t-systems.com
+

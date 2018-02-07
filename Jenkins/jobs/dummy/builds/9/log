@@ -1,0 +1,51 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Apps\Jenkins\workspace\dummy
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git # timeout=10
+Fetching upstream changes from git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_SSH to set credentials 
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision b6f41fb33e3f35e83206fd776c1ac3a5024ebf95 (refs/remotes/origin/master)
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe checkout -f b6f41fb33e3f35e83206fd776c1ac3a5024ebf95
+Commit message: "kcchh bhi"
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-list --no-walk b6f41fb33e3f35e83206fd776c1ac3a5024ebf95 # timeout=10
+[dummy] $ cmd /c call D:\tools\apache-tomcat-8.5.23\apache-tomcat-8.5.23\temp\jenkins8242599389153150242.bat
+
+D:\Apps\Jenkins\workspace\dummy>mvn test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Amazon 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Amazon ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Apps\Jenkins\workspace\dummy\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ Amazon ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 21 source files to D:\Apps\Jenkins\workspace\dummy\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Amazon ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Apps\Jenkins\workspace\dummy\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ Amazon ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Amazon ---
+[INFO] No tests to run.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.986 s
+[INFO] Finished at: 2018-02-02T11:43:23+05:30
+[INFO] Final Memory: 20M/137M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

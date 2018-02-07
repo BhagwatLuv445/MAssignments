@@ -1,0 +1,152 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Apps\Jenkins\workspace\dummy
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git # timeout=10
+Fetching upstream changes from git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_SSH to set credentials 
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision f0356eead0824f3353e8eb5f1d0e184c0e528e83 (refs/remotes/origin/master)
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe checkout -f f0356eead0824f3353e8eb5f1d0e184c0e528e83
+Commit message: "bhagwat added"
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-list --no-walk b6f41fb33e3f35e83206fd776c1ac3a5024ebf95 # timeout=10
+[dummy] $ cmd /c call D:\tools\apache-tomcat-8.5.23\apache-tomcat-8.5.23\temp\jenkins6107039349297195436.bat
+
+D:\Apps\Jenkins\workspace\dummy>mvn test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Amazon 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Amazon ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Apps\Jenkins\workspace\dummy\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ Amazon ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 21 source files to D:\Apps\Jenkins\workspace\dummy\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Amazon ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Apps\Jenkins\workspace\dummy\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ Amazon ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Amazon ---
+[INFO] No tests to run.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.DailyRollingFileAppender.
+Starting ChromeDriver 2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1) on port 20167
+Only local connections are allowed.
+Feb 02, 2018 12:30:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Before Navigating to'http://Amazon.in/'
+After Navigating to'http://Amazon.in/'
+Exception Occuredorg.openqa.selenium.UnsupportedCommandException: actions
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: EventFiringWebDriver
+Exception Occuredorg.openqa.selenium.UnsupportedCommandException: actions
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: EventFiringWebDriver
+Trying to click on'[[ChromeDriver: chrome on XP (ddcb8a18999ef92791640846d5243939)] -> id: continue]'Before any changes made
+Trying to click on'[[ChromeDriver: chrome on XP (ddcb8a18999ef92791640846d5243939)] -> id: signInSubmit]'Before any changes made
+Exception Occuredorg.openqa.selenium.UnsupportedCommandException: actions
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: EventFiringWebDriver
+hidriver: org.openqa.selenium.support.events.EventFiringWebDriver@3f1d2e23
+org.openqa.selenium.support.events.EventFiringWebDriver@3f1d2e23
+null value
+Trying to click on'[[ChromeDriver: chrome on XP (ddcb8a18999ef92791640846d5243939)] -> class name: s-access-title]'Before any changes made
+clikc first result
+org.openqa.selenium.support.events.EventFiringWebDriver@3f1d2e23
+Exception Occuredorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='addToCart']/div/div[3]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\M1043004\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: ddcb8a18999ef92791640846d5243939
+*** Element info: {Using=xpath, value=//*[@id='addToCart']/div/div[3]}
+Exception Occuredorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='addToCart']/div/div[3]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\M1043004\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: ddcb8a18999ef92791640846d5243939
+*** Element info: {Using=xpath, value=//*[@id='addToCart']/div/div[3]}
+Exception Occuredorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='addToCart']/div/div[3]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\M1043004\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: ddcb8a18999ef92791640846d5243939
+*** Element info: {Using=xpath, value=//*[@id='addToCart']/div/div[3]}
+Exception Occuredorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='addToCart']/div/div[3]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'G1C2ML14316', ip: '172.17.124.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\M1043004\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: ddcb8a18999ef92791640846d5243939
+*** Element info: {Using=xpath, value=//*[@id='addToCart']/div/div[3]}
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 191.113 sec <<< FAILURE! - in TestSuite
+AmazonTest(com.Amazon.TestCases.HomePageTest)  Time elapsed: 177.559 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.Amazon.TestCases.HomePageTest.AmazonTest(HomePageTest.java:40)
+
+
+Results :
+
+Failed tests: 
+  HomePageTest.AmazonTest:40 ¯ NullPointer
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:22 min
+[INFO] Finished at: 2018-02-02T12:33:53+05:30
+[INFO] Final Memory: 20M/121M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project Amazon: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\Apps\Jenkins\workspace\dummy\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="15844" started-at="2018-01-25T08:57:41Z" finished-at="2018-01-25T08:57:57Z">
+    <groups>
+    </groups>
+    <test name="SignUpTest" duration-ms="15844" started-at="2018-01-25T08:57:41Z" finished-at="2018-01-25T08:57:57Z">
+      <class name="testCase.SignUpTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:testCase.SignUpTest@7085bdee]" name="initBrowser" is-config="true" duration-ms="4997" started-at="2018-01-25T14:27:41Z" finished-at="2018-01-25T14:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.SignUpTest@7085bdee]" name="signUp" duration-ms="9598" started-at="2018-01-25T14:27:46Z" finished-at="2018-01-25T14:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhagwat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prajapati]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bhagwat12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bhagwat12345@]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[01]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1994]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[9752509094]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Bhagwat9094@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCase.SignUpTest@7085bdee]" name="closeBrowser" is-config="true" duration-ms="1182" started-at="2018-01-25T14:27:56Z" finished-at="2018-01-25T14:27:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCase.SignUpTest -->
+    </test> <!-- SignUpTest -->
+  </suite> <!-- Suite1 -->
+</testng-results>

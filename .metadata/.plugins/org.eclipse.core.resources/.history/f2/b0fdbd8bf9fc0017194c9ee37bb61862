@@ -1,0 +1,17 @@
+package Utility;
+
+import org.testng.annotations.DataProvider;
+
+import com.Ferrari_F1_Club.Utility.ExcelUtil;
+
+public class ToolsQaDataProvider {
+
+	
+	@DataProvider(name = "toolsQa")
+	public static Object[][] getToolsQaData(){
+		Object[][] map = ExcelRead.getDataFromDataprovider("KeywordFramework");
+		
+		return map;
+	}
+	
+}

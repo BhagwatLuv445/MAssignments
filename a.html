@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MY Registration</title>
+
+    <style>
+        /*.form {
+            padding-top: 50px;
+            padding-left: 700px;
+        }
+        */
+/*        
+        body {
+            background-image: url("images.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .radio-group .not-active {
+            color: #3276b1;
+            background-color: #fff;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        #id {
+            padding-bottom: 200px;
+        }*/
+    </style>
+
+
+    <script>
+        function validate() {
+            var password = document.myform.password.value;
+            console.log("function call")
+            var cnrmpassword = document.myform.confirmpassword.value;
+
+            var passPattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})";
+
+            var email = document.myform.email.value;
+
+            var pattern = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/;
+
+            if (!((document.myform.firstname.value).match("[a-zA-Z]")) || (document.myform.firstname.value).length < 5) 
+            {                
+                    alert("Please give first name in proper format");
+                    document.myform.firstname.value = "";
+                    return false;    
+            }
+            else if (!((document.myform.lastname.value).match("[a-zA-Z]")) || (document.myform.lastname.value).length < 5) 
+            {            
+                    alert("Please give Last name in proper format");
+                    document.myform.lastname.value = "";
+                    return false;            
+            }
+            else if (!(email.match(pattern))) 
+            {
+                alert("invalid email");
+                return false;
+            }
+            else if (!(password.match(passPattern))) 
+            {
+                //alert("Password must be 6 character long");
+                alert("Password must contains 1 Lower, 1 Upper, and 1 Number and should be 8 character long");
+                document.myform.password.value = "";
+                document.myform.confirmpassword.value = "";
+                return false;
+            }
+            else if (cnrmpassword != password) 
+            {
+                //alert("Password missMatch");
+                alert("Confirm Password must be same");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+     <form class="form" name="myform" onsubmit="return validate()">
+        <input type="text" id="firstname" placeholder="Firstname" name="firstname" required="required"><br>
+        <input type="text" id="lastname" placeholder="Lastname" name="lastname" required="required"><br>
+        <input type="text" placeholder="Email" id="name" name="email"><br>
+        <input type="password" placeholder="Password" id="password" name="password"><br>
+        <input type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword"><br>
+        <label><input type="radio" name="optradio" checked>Male</label>
+        <label><input type="radio" name="optradio">Female</label>
+
+    <br>
+    <br>
+    <button type="submit" name="submit">Submit</button>
+    <input type="reset" value="Reset"/>
+    </form>
+    
+</body>
+
+</html>

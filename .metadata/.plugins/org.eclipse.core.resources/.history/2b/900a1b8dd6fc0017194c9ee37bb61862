@@ -1,0 +1,19 @@
+url =http://toolsqa.com/automation-practice-form/
+
+firstName = firstname
+lastName = lastname
+sexRadion = //input[@name="sex"]
+yoExpRadio = //input[@name="exp"]
+date = //*[@id="datepicker"]
+chkProf = //*[@name="profession"]
+pic = //*[@name="photo"]
+tools = //input[@name="tool"]
+continentDD = //select[@name="continents"]
+submitBtn = submit
+
+
+browser = chrome
+browserPath =.\\Resources\\com\\Ferrari_F1_Club\\Browser\\chromedriver.exe		
+browserDriver = webdriver.chrome.driver
+Log4jPropertiesFilePath = .\\Resources\\com\\Ferrari_F1_Club\\Properties\\log4j.properties
+

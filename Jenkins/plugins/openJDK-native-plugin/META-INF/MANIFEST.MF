@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: vjuranek
+Build-Jdk: 1.7.0_55
+Extension-Name: openJDK-native-plugin
+Implementation-Title: openJDK-native-plugin
+Implementation-Version: 1.1
+Group-Id: org.jenkinsci.plugins.openjdk_native
+Short-Name: openJDK-native-plugin
+Long-Name: openJDK-native-plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/OpenJDK+native+intall
+ er+plugin
+Plugin-Version: 1.1
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Developers: Vojtech Juranek:vjuranek:
+

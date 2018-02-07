@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Hybrid/src/test/java/Resources&apos;&#x0D;&#x0A;- Original project: &apos;Ferrari_F1_Club&apos;&#x0D;&#x0A;- Destination element: &apos;Hybrid/src/test/java/Resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     config.properties&#x0D;&#x0A;     log4j.properties" description="Copy files" destination="=Hybrid/src\/test\/java&lt;Resources" element1="Resources/com/Ferrari_F1_Club/Properties/config.properties" element2="Resources/com/Ferrari_F1_Club/Properties/log4j.properties" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1516285196519" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.plugins.http__request.HttpRequestGlobalConfig plugin="http_request@1.8.22">
+  <basicDigestAuthentications/>
+  <formAuthentications/>
+</jenkins.plugins.http__request.HttpRequestGlobalConfig>

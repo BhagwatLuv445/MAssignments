@@ -1,0 +1,36 @@
+package com.Amazon.TestCases;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.Amazon.PageObject.HomePage;
+import com.Amazon.PageObject.LoginPage;
+import com.Amazon.Utility.TestBase;
+
+public class HomePageTest extends TestBase{
+
+	HomePage homePage;
+	public HomePageTest(){
+		super();
+	}
+
+	@BeforeMethod
+	public void setUp(){
+		initialiazation();
+		homePage = new HomePage();				
+	}
+
+	@Test(priority = 0)
+	public void AmazonTest(){
+		LoginPage loginPage = homePage.signInHoverBtn(driver);
+		loginPage.enterEmail("7000426261");
+		loginPage.enterPassword("9752509094");
+		loginPage.clkContinueBtn();
+		loginPage.clkLoginBtn();
+	}
+
+	/*@Test(priority = 1)
+	public void clksignInBtn(){
+		homePage.clksignInBtn(log);
+	}*/
+}

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: chris
+Build-Jdk: 1.8.0_121
+Extension-Name: git-tag-message
+Specification-Title: Exports the message for a git tag as an environme
+ nt variable during a build.
+Implementation-Title: git-tag-message
+Implementation-Version: 1.6.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: git-tag-message
+Long-Name: Git Tag Message Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Git+Tag+Message+Plugin
+Plugin-Version: 1.6.1
+Hudson-Version: 1.651.1
+Jenkins-Version: 1.651.1
+Plugin-Dependencies: git:2.5.0
+Plugin-Developers: Christopher Orr:orrc:chris@orr.me.uk
+

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='JDK_Parameter_Plugin' version='1.0'><l:dependency name='JDK Parameter Plugin' groupId='org.jenkins-ci.plugins' artifactId='JDK_Parameter_Plugin' version='1.0' url='https://wiki.jenkins-ci.org/display/JENKINS/JDK+Parameter+Plugin'><l:description>This plugin allows you to specify what JDK should be used for a job at the build parameters stage.</l:description><l:license name='MIT license' url=''/></l:dependency></l:dependencies>

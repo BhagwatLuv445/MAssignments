@@ -1,0 +1,91 @@
+/**
+ * 
+ */
+package com.Ferrari_F1_Club.Pages;
+
+
+import org.openqa.selenium.WebDriver;
+
+import com.Ferrari_F1_Club.Interfaces.IFerrariShoppingPage;
+import com.Ferrari_F1_Club.Locators.FerrariShoppingPageLocators;
+
+
+/**
+ * @author M1042961
+ *
+ */
+public class FerrariShoppingPage extends FerrariShoppingPageLocators implements IFerrariShoppingPage{
+
+	public FerrariShoppingPage(WebDriver driver) {
+		super(driver);
+		
+	}
+	
+	public void clickJacket() {
+		// TODO Auto-generated method stub
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		jacket.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void clickAddToCart() {
+		// TODO Auto-generated method stub
+
+		addToCart.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void clickProceed() {
+		// TODO Auto-generated method stub
+		proceed.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void selectQuantity() {
+		// TODO Auto-generated method stub
+
+		quantity.click();
+		quantityVal.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void clickBuy() {
+		// TODO Auto-generated method stub
+		buy.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

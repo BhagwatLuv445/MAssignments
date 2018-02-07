@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>scm-trait-commit-skip-parent</artifactId>
+        <version>0.1.1</version>
+    </parent>
+
+    <artifactId>github-scm-trait-commit-skip</artifactId>
+    <packaging>hpi</packaging>
+
+    <name>GitHub Commit Skip SCM Behaviour</name>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Commit+Skip+SCM+Behaviour+Plugin</url>
+    <description>Adds a filtering trait according to the commit message (containing a [ci skip] or [skip ci] text) to an existing Github Branch Source Plugin configuration.</description>
+
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/scm-trait-commit-skip-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/scm-trait-commit-skip-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/scm-trait-commit-skip-plugin</url>
+        <tag>0.1.1</tag>
+    </scm>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>github-branch-source</artifactId>
+            <version>${github-branch-source.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>scm-trait-commit-skip-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73875" started-at="2017-12-20T13:36:05Z" finished-at="2017-12-20T13:37:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="73875" started-at="2017-12-20T13:36:05Z" finished-at="2017-12-20T13:37:19Z">
+      <class name="Selenium.FlipkartAssignment">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:Selenium.FlipkartAssignment@3d921e20]" name="invokeBrowser" duration-ms="73851" started-at="2017-12-20T19:06:05Z" finished-at="2017-12-20T19:07:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+      </class> <!-- Selenium.FlipkartAssignment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

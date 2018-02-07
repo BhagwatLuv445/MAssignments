@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <ConversionRateResponse xmls="http://www.webserviceX.NET/">
+      <ConversionRateResult>63.3955</ConversionRateResult>
+      </ConversionRateResponse>
+   </soap:Body>
+</soap:Envelope>

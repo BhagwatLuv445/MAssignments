@@ -1,0 +1,98 @@
+package Operation;
+
+
+
+import java.util.List;
+import java.util.Properties;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class UIOperation {
+	WebDriver driver;
+
+	public UIOperation(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void perform(Properties p, String operation, String objectName, String objectType, String locatorValue, String value)
+			throws Exception {
+		if(operation != null){
+			switch (operation.toLowerCase()) {
+			case "click":
+				try{
+					WebElement clkElement = this.getLocator(objectName,locatorValue, objectType);
+					Operation.click(clkElement);
+				}catch(Exception e){
+					System.out.println("Not found");
+				}
+				break;
+			case "filltext":
+				WebElement fillElement = this.getLocator(objectName,locatorValue, objectType);
+				Operation.enterTextField(fillElement, value);
+				break;
+
+			case "gotourl":				
+				driver.get(value);
+				break;
+			case "clkradio":
+				List<WebElement> radioElement = this.getLocators(objectName,locatorValue, objectType);
+				Operation.selectRadioBtn(radioElement, value);
+				break;
+			case "chkbox":
+				List<WebElement> chkBoxElement = this.getLocators(objectName,locatorValue, objectType);
+				Operation.selectMultipleCheck_Box(chkBoxElement, value);
+				break;
+			case "dropdown":
+				WebElement dropDownElement = this.getLocator(objectName,locatorValue, objectType);
+				Operation.selectByVisibleText(dropDownElement, value);
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	private WebElement getLocator(String objectName,String locatorValue, String locatorType) throws Exception
+	{
+		if(locatorType.toLowerCase().equals("id"))
+			return driver.findElement(By.id(locatorValue));
+		else if(locatorType.toLowerCase().equals("classname") || locatorType.toLowerCase().equals("class"))
+			return driver.findElement(By.className(locatorValue));
+		else if(locatorType.toLowerCase().equals("name"))
+			return driver.findElement(By.name(locatorValue));
+		else if(locatorType.toLowerCase().equals("tagname") || locatorType.toLowerCase().equals("tag"))
+			return driver.findElement(By.tagName(locatorValue));
+		else if(locatorType.toLowerCase().equals("linktext") || locatorType.toLowerCase().equals("text"))
+			return driver.findElement(By.linkText(locatorValue));
+		else if(locatorType.toLowerCase().equals("partiallinktext"))
+			return driver.findElement(By.partialLinkText(locatorValue));
+		else if(locatorType.toLowerCase().equals("cssSelector") || locatorType.toLowerCase().equals("css"))
+			return driver.findElement(By.cssSelector(locatorValue));
+		else if(locatorType.toLowerCase().equals("xpath"))
+			return driver.findElement(By.xpath(locatorValue));
+		else 
+			throw new Exception("Unknown locator type" + locatorType);
+	}
+
+	public List<WebElement> getLocators(String objectName,String locatorValue, String locatorType) throws Exception
+	{		
+		if(locatorType.toLowerCase().equals("id"))
+			return (List<WebElement>) driver.findElements(By.id(locatorValue));
+		else if(locatorType.toLowerCase().equals("classname") || locatorType.toLowerCase().equals("class"))
+			return (List<WebElement>) driver.findElements(By.className(locatorValue));
+		else if(locatorType.toLowerCase().equals("name"))
+			return (List<WebElement>) driver.findElements(By.name(locatorValue));
+		else if(locatorType.toLowerCase().equals("tagname") || locatorType.toLowerCase().equals("tag"))
+			return (List<WebElement>) driver.findElements(By.tagName(locatorValue));
+		else if(locatorType.toLowerCase().equals("linktext") || locatorType.toLowerCase().equals("text"))
+			return (List<WebElement>) driver.findElements(By.linkText(locatorValue));
+		else if(locatorType.toLowerCase().equals("partiallinktext"))
+			return (List<WebElement>) driver.findElements(By.partialLinkText(locatorValue));
+		else if(locatorType.toLowerCase().equals("cssSelector") || locatorType.toLowerCase().equals("css"))
+			return (List<WebElement>) driver.findElements(By.cssSelector(locatorValue));
+		else if(locatorType.toLowerCase().equals("xpath"))
+			return (List<WebElement>) driver.findElements(By.xpath(locatorValue));
+		else 
+			throw new Exception("Unknown locator type" + locatorType);
+	}
+}

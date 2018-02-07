@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.jvctgl.ViolationsToGitLabGlobalConfiguration plugin="violation-comments-to-gitlab@1.22">
+  <gitLabUrl></gitLabUrl>
+  <ignoreCertificateErrors>false</ignoreCertificateErrors>
+  <apiToken></apiToken>
+  <apiTokenPrivate>false</apiTokenPrivate>
+  <authMethodHeader>false</authMethodHeader>
+  <apiTokenCredentialsId></apiTokenCredentialsId>
+  <minSeverity>INFO</minSeverity>
+</org.jenkinsci.plugins.jvctgl.ViolationsToGitLabGlobalConfiguration>

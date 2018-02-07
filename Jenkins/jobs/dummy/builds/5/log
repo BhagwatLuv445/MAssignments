@@ -1,0 +1,97 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Apps\Jenkins\workspace\dummy
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git # timeout=10
+Fetching upstream changes from git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_SSH to set credentials 
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress git@glcgitlab.southindia.cloudapp.azure.com:M1043004/Amazon.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 80d314aa60b53780bf493699c31e3abafb6bb3dc (refs/remotes/origin/master)
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe checkout -f 80d314aa60b53780bf493699c31e3abafb6bb3dc
+Commit message: "amazon"
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-list --no-walk 80d314aa60b53780bf493699c31e3abafb6bb3dc # timeout=10
+[dummy] $ cmd /c call D:\tools\apache-tomcat-8.5.23\apache-tomcat-8.5.23\temp\jenkins3849962457654516653.bat
+
+D:\Apps\Jenkins\workspace\dummy>mvn test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Amazon 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Amazon ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Apps\Jenkins\workspace\dummy\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ Amazon ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 21 source files to D:\Apps\Jenkins\workspace\dummy\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/TestBase.java:[16,30] package org.testng.annotations does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[7,18] package org.testng does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/TestCases/HomePageTest.java:[3,30] package org.testng.annotations does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/TestBase.java:[42,10] cannot find symbol
+  symbol:   class BeforeSuite
+  location: class com.Amazon.Utility.TestBase
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/TestCases/HomePageTest.java:[26,10] cannot find symbol
+  symbol:   class Test
+  location: class com.Amazon.TestCases.HomePageTest
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[23,31] cannot find symbol
+  symbol:   class TestException
+  location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[32,31] cannot find symbol
+  symbol:   class TestException
+  location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[40,31] cannot find symbol
+  symbol:   class TestException
+  location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[48,31] cannot find symbol
+  symbol:   class TestException
+  location: class com.Amazon.Utility.CommonUtil
+[INFO] 9 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.907 s
+[INFO] Finished at: 2018-02-02T11:38:02+05:30
+[INFO] Final Memory: 19M/138M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project Amazon: Compilation failure: Compilation failure: 
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/TestBase.java:[16,30] package org.testng.annotations does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[7,18] package org.testng does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/TestCases/HomePageTest.java:[3,30] package org.testng.annotations does not exist
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/TestBase.java:[42,10] cannot find symbol
+[ERROR]   symbol:   class BeforeSuite
+[ERROR]   location: class com.Amazon.Utility.TestBase
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/TestCases/HomePageTest.java:[26,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.Amazon.TestCases.HomePageTest
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[23,31] cannot find symbol
+[ERROR]   symbol:   class TestException
+[ERROR]   location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[32,31] cannot find symbol
+[ERROR]   symbol:   class TestException
+[ERROR]   location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[40,31] cannot find symbol
+[ERROR]   symbol:   class TestException
+[ERROR]   location: class com.Amazon.Utility.CommonUtil
+[ERROR] /D:/Apps/Jenkins/workspace/dummy/src/com/Amazon/Utility/CommonUtil.java:[48,31] cannot find symbol
+[ERROR]   symbol:   class TestException
+[ERROR]   location: class com.Amazon.Utility.CommonUtil
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

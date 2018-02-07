@@ -1,0 +1,37 @@
+2018-01-08 15:26:19,569  INFO [main] logging.Log:68 - Browser open
+ 2018-01-08 15:26:21,402  INFO [main] logging.Log:84 - Maximizing Window
+ 2018-01-08 15:26:24,047  INFO [main] logging.Log:90 - Launching the Application
+ 2018-01-08 15:26:26,169  INFO [main] logging.Log:24 - User Name Field found
+ 2018-01-08 15:26:26,170  INFO [main] logging.Log:25 - User Name entered in the user name field
+ 2018-01-08 15:26:26,356  INFO [main] logging.Log:27 - Password Field found
+ 2018-01-08 15:26:26,357  INFO [main] logging.Log:28 - Password entered in the Password field
+ 2018-01-08 15:26:31,047  INFO [main] logging.Log:30 - login button clicked
+ 2018-01-08 15:26:32,688  INFO [main] logging.Log:30 - One Wayfound
+ 2018-01-08 15:26:32,873  INFO [main] logging.Log:33 - One Way trip Radio Button Selected
+ 2018-01-08 15:26:32,949  INFO [main] logging.Log:42 - passenger Number element found
+ 2018-01-08 15:26:33,013  INFO [main] logging.Log:44 - passenger Number 
+ 2018-01-08 15:26:33,085  INFO [main] logging.Log:49 - Departing station element found
+ 2018-01-08 15:26:33,216  INFO [main] logging.Log:51 - Departing station has entered
+ 2018-01-08 15:26:33,288  INFO [main] logging.Log:56 - Departing month element found
+ 2018-01-08 15:26:33,466  INFO [main] logging.Log:58 - depart Month entered using selected by visibletext
+ 2018-01-08 15:26:33,553  INFO [main] logging.Log:63 - departing day field element has found
+ 2018-01-08 15:26:33,757  INFO [main] logging.Log:65 - departing day entered
+ 2018-01-08 15:26:33,943  INFO [main] logging.Log:70 - arriving place field element found
+ 2018-01-08 15:26:35,237  INFO [main] logging.Log:72 - Arriving place enetered
+ 2018-01-08 15:26:35,956  INFO [main] logging.Log:77 - arriveMonth field element found
+ 2018-01-08 15:26:36,169  INFO [main] logging.Log:79 - arrive month entered
+ 2018-01-08 15:26:36,282  INFO [main] logging.Log:84 - arrive day field element found
+ 2018-01-08 15:26:36,418  INFO [main] logging.Log:86 - arrive day entered
+ 2018-01-08 15:26:36,613  INFO [main] logging.Log:117 - airline field element found
+ 2018-01-08 15:26:36,613  INFO [main] logging.Log:118 - airline name entered
+ 2018-01-08 15:26:37,992  INFO [main] logging.Log:123 - continue button found
+ 2018-01-08 15:26:37,992  INFO [main] logging.Log:124 - clicked on continue button
+ 2018-01-08 15:26:38,172  INFO [main] logging.Log:32 - depart flight field element found
+ 2018-01-08 15:26:38,331  INFO [main] logging.Log:34 - Unified Airlines 363 281 11:24flight selected
+ 2018-01-08 15:26:38,331  INFO [main] logging.Log:51 - return flight field element found
+ 2018-01-08 15:26:38,459  INFO [main] logging.Log:53 - Pangea Skies Airlines 632 282 16:37flight selected
+ 2018-01-08 15:26:40,321  INFO [main] logging.Log:66 - continue button element found
+ 2018-01-08 15:26:40,321  INFO [main] logging.Log:67 - continue button click
+ 2018-01-08 15:26:49,999  INFO [main] logging.Log:17 - logout button found and click
+ 2018-01-08 15:26:52,233  INFO [main] logging.Log:96 - TearDown the Browser
+ 

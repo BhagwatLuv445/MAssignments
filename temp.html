@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        input[type=text] {
+            width: 10%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        function myFunction() {
+
+            var temp = document.getElementById("cel").value;
+            var fer = document.getElementById("fer");
+            if (temp != null && temp != "") {
+                var result = (temp * 9 / 5) + 32;
+                console.log(result);
+                fer.value = result;
+            } else {
+                fer.value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Temperature Converter</h1>
+    <form>
+        <label for="cel">Celsius</label>
+        <input type="text" id="cel" name="cel" onkeyup="myFunction()">
+        <label for="fer">fahrenheit</label>
+        <input type="text" id="fer" name="fer">
+    </form>
+</body>
+
+</html>

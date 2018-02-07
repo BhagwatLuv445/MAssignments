@@ -1,0 +1,51 @@
+package Selenium;
+
+import java.util.Scanner;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class FlipkartAssignment {
+
+	static WebDriver driver;
+
+	@Test
+	public void invokeBrowser() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the Browser Choice");
+		System.out.println("1. Chrome\n 2. Firefox\n 3.Internet Explorer");
+		String choice = sc.nextLine();
+		switch (choice) {
+		case "1":
+			FlipkartAssignment.chrome();
+		case "Chrome":
+			FlipkartAssignment.chrome();
+		case "2":
+			FlipkartAssignment.fireFox();
+		case "Firefox":
+			FlipkartAssignment.fireFox();
+		case "3":
+			FlipkartAssignment.internetExplorer();
+		case "Internet Explorer":
+			FlipkartAssignment.internetExplorer();
+		}
+	}
+
+	public static void chrome() {
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\tools\\SeleniumWebDriver\\ChromeDriver 2.29\\chromedriver.exe");
+		driver = new ChromeDriver();
+
+	}
+
+	public static void fireFox() {
+
+	}
+
+	public static void internetExplorer() {
+
+	}
+}

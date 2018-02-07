@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<proxy>
+  <name>172.17.2.218</name>
+  <port>8085</port>
+  <secretPassword>{AQAAABAAAAAQIVCnY4P0JhVK+0+SVP5YrQpgvuNlr1mC8uKTF1LiVd4=}</secretPassword>
+</proxy>

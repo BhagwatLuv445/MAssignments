@@ -1,0 +1,29 @@
+2017-12-26 15:04:24,744  INFO [main] logging.Log:34 - New Driver invoke
+ 2017-12-26 15:04:28,632  INFO [main] logging.Log:36 - The Browser window gets maximize
+ 2017-12-26 15:04:29,880  INFO [main] logging.Log:48 - Web Application Launched
+ 2017-12-26 15:04:33,037  INFO [main] logging.Log:63 - firstName Element Found.
+ 2017-12-26 15:04:33,037  INFO [main] logging.Log:64 - Firstname entered in firstname textbox
+ 2017-12-26 15:04:33,405  INFO [main] logging.Log:69 - lastName Element Found.
+ 2017-12-26 15:04:33,405  INFO [main] logging.Log:70 - Lastname entered in Lastname textbox
+ 2017-12-26 15:04:33,937  INFO [main] logging.Log:129 - username Element Found.
+ 2017-12-26 15:04:33,937  INFO [main] logging.Log:130 - username entered in username textbox
+ 2017-12-26 15:04:35,253  INFO [main] logging.Log:81 - Password Element Found.
+ 2017-12-26 15:04:35,253  INFO [main] logging.Log:82 - Password entered in Password textbox
+ 2017-12-26 15:04:36,745  INFO [main] logging.Log:87 - confirmPassword Element Found.
+ 2017-12-26 15:04:36,745  INFO [main] logging.Log:88 - Confirm Password entered in Confirm Password textbox
+ 2017-12-26 15:04:38,233  INFO [main] logging.Log:99 - Month Element of Date of Birth Found.
+ 2017-12-26 15:04:38,233  INFO [main] logging.Log:100 - Month has chosen from month list
+ 2017-12-26 15:04:38,441  INFO [main] logging.Log:93 - Day Element of Date of Birth Found.
+ 2017-12-26 15:04:38,445  INFO [main] logging.Log:94 - Day entered in Day textbox
+ 2017-12-26 15:04:38,581  INFO [main] logging.Log:105 - year Element of Date of Birth Found.
+ 2017-12-26 15:04:38,581  INFO [main] logging.Log:106 - Year entered in year textbox
+ 2017-12-26 15:04:38,737  INFO [main] logging.Log:111 - Gender Element Found.
+ 2017-12-26 15:04:38,741  INFO [main] logging.Log:112 - Gender has chosen from gender list
+ 2017-12-26 15:04:38,897  INFO [main] logging.Log:117 - Mobile Number Element Found.
+ 2017-12-26 15:04:38,901  INFO [main] logging.Log:118 - Mobile Number entered in Mobile Number textbox
+ 2017-12-26 15:04:39,889  INFO [main] logging.Log:136 - Current Email Element Found.
+ 2017-12-26 15:04:39,889  INFO [main] logging.Log:137 - Current Email entered in Current Email textbox
+ 2017-12-26 15:04:41,893  INFO [main] logging.Log:142 - Next Button Element Found.
+ 2017-12-26 15:04:41,893  INFO [main] logging.Log:143 - Click action performed on Next Button
+ 2017-12-26 15:04:42,045  INFO [main] logging.Log:72 - Browser closed
+ 

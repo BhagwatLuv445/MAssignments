@@ -1,0 +1,113 @@
+
+package com.Ferrari_F1_Club.Base;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.logging.Log;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+
+import com.Ferrari_F1_Club.Reports.Reporters;
+import com.Ferrari_F1_Club.Utility.PropertiesUtil;
+import com.Ferrari_F1_Club.Utility.WaitUtil;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+public class TestBase extends Reporters {
+
+	protected ExtentReports extent;
+	protected ExtentTest test;
+	protected static WebDriver driver;
+	// protected Properties prop;
+
+	protected static Logger log = Logger.getLogger(Log.class.getName());
+
+	@BeforeSuite
+	public void initialiazation() throws IOException {
+
+		try {
+			extent = new ExtentReports(System.getProperty("user.dir")+PropertiesUtil.read("extentPath"),true);
+		} catch (IOException e) {
+			Log.error(e.toString()+this.toString());
+		}
+
+		extent.loadConfig(new File(System.getProperty("user.dir")+"\\Extent.xml"));
+		
+		String browserName = PropertiesUtil.read("browser");
+		String browserPath = PropertiesUtil.read("browserPath");
+		String browserDriver = PropertiesUtil.read("browserDriver");
+		String Log4jPropertiesFilePath = PropertiesUtil.read("Log4jPropertiesFilePath");
+
+		PropertyConfigurator.configure(System.getProperty("user.dir")+Log4jPropertiesFilePath);
+		if (browserName.equals("chrome")) {
+			System.setProperty(browserDriver,System.getProperty("user.dir")+ browserPath);
+			driver = new ChromeDriver();
+			log.info("Browser open");
+		} else if (browserName.equals("firefox")) {
+			/*
+			 * System.setProperty("webdriver.gecko.driver",
+			 * "D:\\tools\\SeleniumWebDriver\\chromedriver_win32\\chromedriver.exe"
+			 * );
+			 */
+		}
+
+		driver.manage().window().maximize();
+		log.info("Maximizing Window");
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(WaitUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(WaitUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+
+		driver.get(PropertiesUtil.read("url"));
+		log.info("Launching the Application");
+	}
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		
+		if(result.getStatus()== ITestResult.FAILURE) {
+			test.log(LogStatus.FAIL, result.getThrowable());
+			
+			Log.error("TEST FAILED..........");
+			
+			try {
+			
+			TakesScreenshot ts=(TakesScreenshot)driver;
+
+			File source=ts.getScreenshotAs(OutputType.FILE);
+
+				FileUtils.copyFile(source, new File("./Screenshots/"+result.getName()+".png"));
+			} catch (IOException e) {
+				Log.error("Error in taking screenshot");
+			}
+
+		}
+		else
+			 test.log(LogStatus.PASS, "Test Case Passed : ");
+		extent.endTest(test);
+	}
+	
+	@AfterTest
+	public void endReport() {
+		
+		extent.flush();
+		//extent.close();		
+	}
+
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
+		log.info("TearDown the Browser");
+	}
+}

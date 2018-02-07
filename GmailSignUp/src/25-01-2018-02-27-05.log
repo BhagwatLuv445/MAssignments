@@ -1,0 +1,4 @@
+2018-01-25 14:27:05,378  INFO [main] logging.Log:36 - New Driver invoke
+ 2018-01-25 14:27:21,752  INFO [main] logging.Log:38 - The Browser window gets maximize
+ 2018-01-25 14:27:22,983  INFO [main] logging.Log:73 - Browser closed
+ 

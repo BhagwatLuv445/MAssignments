@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="180649" started-at="2018-01-16T06:51:46Z" finished-at="2018-01-16T06:54:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="180649" started-at="2018-01-16T06:51:46Z" finished-at="2018-01-16T06:54:47Z">
+      <class name="Testcases.ToolsQaTest">
+        <test-method status="PASS" signature="initialiazation()[pri:0, instance:Testcases.ToolsQaTest@5bcab519]" name="initialiazation" is-config="true" duration-ms="8686" started-at="2018-01-16T12:21:38Z" finished-at="2018-01-16T12:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiazation -->
+        <test-method status="PASS" signature="clickOnPartialLink()[pri:0, instance:Testcases.ToolsQaTest@5bcab519]" name="clickOnPartialLink" duration-ms="18346" started-at="2018-01-16T12:21:46Z" finished-at="2018-01-16T12:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPartialLink -->
+        <test-method status="PASS" signature="clickOnLink()[pri:1, instance:Testcases.ToolsQaTest@5bcab519]" name="clickOnLink" duration-ms="44238" started-at="2018-01-16T12:22:05Z" finished-at="2018-01-16T12:22:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLink -->
+        <test-method status="PASS" signature="fillPersonalInfoTest()[pri:2, instance:Testcases.ToolsQaTest@5bcab519]" name="fillPersonalInfoTest" duration-ms="34369" started-at="2018-01-16T12:22:49Z" finished-at="2018-01-16T12:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillPersonalInfoTest -->
+        <test-method status="PASS" signature="downLoadFile()[pri:3, instance:Testcases.ToolsQaTest@5bcab519]" name="downLoadFile" duration-ms="83644" started-at="2018-01-16T12:23:23Z" finished-at="2018-01-16T12:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downLoadFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Testcases.ToolsQaTest@5bcab519]" name="tearDown" is-config="true" duration-ms="1296" started-at="2018-01-16T12:24:47Z" finished-at="2018-01-16T12:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcases.ToolsQaTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,44 @@
+Status: UNKNOWN
+Time Taken: 669
+Size: 441
+Timestamp: Fri Feb 02 17:07:24 IST 2018
+TestStep: Weather
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://api.openweathermap.org
+URL: http://api.openweathermap.org/data/2.5/weather?appid=8d69d2803b9bd38f2eb7664d58aa88e3&q=bhopal
+
+---------------- Request ---------------------------
+Host: [api.openweathermap.org]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Proxy-Connection: [Keep-Alive]
+
+GET http://api.openweathermap.org/data/2.5/weather?appid=8d69d2803b9bd38f2eb7664d58aa88e3&q=bhopal HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.openweathermap.org
+Proxy-Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.0 200 OK]
+Content-Length: [441]
+Access-Control-Allow-Methods: [GET, POST]
+Access-Control-Allow-Credentials: [true]
+X-Cache-Lookup: [MISS from virtue:8085]
+Connection: [keep-alive]
+Server: [openresty]
+X-Cache-Key: [/data/2.5/weather?q=bhopal]
+X-Cache: [MISS from virtue]
+Date: [Fri, 02 Feb 2018 11:37:25 GMT]
+Access-Control-Allow-Origin: [*]
+Via: [1.0 virtue (squid/3.1.10)]
+Content-Type: [application/json; charset=utf-8]
+
+{"coord":{"lon":77.4,"lat":23.25},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":303.15,"pressure":1012,"humidity":20,"temp_min":303.15,"temp_max":303.15},"visibility":6000,"wind":{"speed":1.5,"deg":270},"clouds":{"all":0},"dt":1517569200,"sys":{"type":1,"id":7765,"message":0.0028,"country":"IN","sunrise":1517534998,"sunset":1517575113},"id":1275841,"name":"Bhopal","cod":200}

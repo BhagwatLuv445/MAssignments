@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="Getting started" resourceRoot="" soapui-version="5.3.0" id="b3aaf3e1-aecd-4439-a466-d5483f51ff3f" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite name="TestSuite" id="6e572d52-5832-4e82-9104-11bf4b21fbbb"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase" searchProperties="true" id="2d18ae0c-265a-4e00-9843-c7b4e0927ee9"><con:settings/><con:testStep type="groovy" name="Hello world" id="3d852038-69b1-472a-8637-4c33db1ca1fc"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport
+
+class Greet {
+    def name
+    
+    Greet(who) { 
+        name = who[0].toUpperCase() + who[1..-1] 
+    }
+  
+    def salute() { 
+        return "Hello $name!" 
+    }
+}
+
+g = new Greet('Bhagwat')      			
+UISupport.showInfoMessage(g.salute())</script></con:config></con:testStep><con:testStep type="groovy" name="First Groovy" id="321a36b0-1feb-4dcc-99a8-3705a7e5b637"><con:settings/><con:config><script>def name = "Bhagwat"
+log.info("My name is " +name)
+
+</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>

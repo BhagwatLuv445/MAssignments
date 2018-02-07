@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: fabioneves
+Build-Jdk: 1.7.0_21
+Extension-Name: JDK_Parameter_Plugin
+Specification-Title: This plugin allows you to specify what JDK should
+  be used for a job at the build parameters stage.
+Implementation-Title: JDK_Parameter_Plugin
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: JDK_Parameter_Plugin
+Long-Name: JDK Parameter Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/JDK+Parameter+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.480.3
+Jenkins-Version: 1.480.3
+Plugin-Developers: Baris Batiege:baris_batiege:baris.batiege@datalex.c
+ om,Fabio Neves:fneves:fabio.neves@datalex.com
+

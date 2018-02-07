@@ -1,0 +1,35 @@
+Started at Sun Feb 04 12:52:31 IST 2018
+FATAL: Network is unreachable: connect
+[8mha:////4E+4191zVZUMMOGq8uu+tnrh8ZcBUhnfgenf2W7sXYYsAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient$1.run(HttpClient.java:484)
+	at sun.net.www.http.HttpClient$1.run(HttpClient.java:482)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(HttpClient.java:481)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:522)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:179)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:190)
+	at hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:1629)
+	at jenkins.model.DownloadSettings$DailyCheck.execute(DownloadSettings.java:131)
+	at hudson.model.AsyncPeriodicWork$1.run(AsyncPeriodicWork.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Finished at Sun Feb 04 12:52:32 IST 2018. 532ms
+Started at Sun Feb 04 23:09:42 IST 2018
+Finished at Sun Feb 04 23:10:57 IST 2018. 75521ms

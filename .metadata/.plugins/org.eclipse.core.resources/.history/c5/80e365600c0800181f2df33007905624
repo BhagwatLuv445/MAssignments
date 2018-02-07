@@ -1,0 +1,53 @@
+package com.Ferrari_F1_Club.Testcases;
+
+import java.util.HashMap;
+
+import org.testng.annotations.Test;
+
+import com.Ferrari_F1_Club.Base.TestBase;
+import com.Ferrari_F1_Club.Pages.FerrariBookingPage;
+import com.Ferrari_F1_Club.Pages.FerrariHomePage;
+import com.Ferrari_F1_Club.Pages.FerrariLoginPage;
+import com.Ferrari_F1_Club.Pages.FerrariShoppingPage;
+import com.Ferrari_F1_Club.Utility.FerrariF1DataProvider;
+
+public class Deleteproduct extends TestBase {
+
+	@Test(dataProvider = "LoginData", dataProviderClass = FerrariF1DataProvider.class)
+	public void login(HashMap<String, String> map) {
+
+		test = extent.startTest("LoginTest");
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		FerrariHomePage fhp = new FerrariHomePage(driver);
+		FerrariLoginPage flp = new FerrariLoginPage(driver);
+
+		fhp.clickLoginSignUpBtn();
+		flp.typeUsername(map.get("userName"));
+		flp.typePassword(map.get("password"));
+		flp.clickLoginButton();
+
+	}
+
+	@Test(dependsOnMethods = { "login" }, dataProvider = "AddressData", dataProviderClass = FerrariF1DataProvider.class)
+	public void shoppingTest(HashMap<String, String> map) {
+
+		test = extent.startTest("ShoppingTest");
+
+		FerrariShoppingPage fsp = new FerrariShoppingPage(driver);
+		FerrariBookingPage fbp = new FerrariBookingPage(driver);
+		FerrariHomePage fhp = new FerrariHomePage(driver);
+
+		fhp.clickShop();
+		fsp.clickJacket();
+		fsp.clickAddToCart();
+		fsp.clickProceed();
+		fsp.selectQuantity();
+		fsp.delProduct();
+		
+	}
+}

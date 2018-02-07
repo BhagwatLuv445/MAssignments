@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: aaronwhiteside
+Build-Jdk: 1.8.0_121
+Extension-Name: pipeline-github
+Specification-Title: Pipeline GitHub Support
+Implementation-Title: pipeline-github
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: pipeline-github
+Long-Name: Pipeline: GitHub
+Url: https://wiki.jenkins.io/display/JENKINS/Pipeline+Github+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 2.54
+Jenkins-Version: 2.54
+Plugin-Dependencies: workflow-cps:2.29,workflow-job:2.10,workflow-step
+ -api:2.9,github-branch-source:2.0.5,scm-api:2.1.1,structs:1.6
+Plugin-Developers: 
+

@@ -1,0 +1,28 @@
+2018-01-18 18:06:50 INFO  TestBase:114 - loading config.properties
+2018-01-18 18:06:50 INFO  TestBase:119 - loading or.properties
+2018-01-18 18:06:50 INFO  TestBase:124 - loading homepage.properties
+2018-01-18 18:06:54 INFO  WaitHelper:33 - 20
+2018-01-18 18:06:54 INFO  WaitHelper:38 - 240
+2018-01-18 18:06:54 INFO  Registration:27 - com.hybridFramework.registration.Registration started
+2018-01-18 18:07:09 INFO  WaitHelper:62 - element found...Sign in
+2018-01-18 18:07:09 INFO  LoginPage:57 - clicked on sign in link...
+2018-01-18 18:07:12 INFO  LoginPage:84 - entering registration email..1516279032363@gmail.com
+2018-01-18 18:07:15 INFO  WaitHelper:62 - element found...
+2018-01-18 18:07:15 INFO  WaitHelper:62 - element found...
+2018-01-18 18:07:15 INFO  RegistrationPage:103 - selecting mr checkbox..
+2018-01-18 18:07:15 INFO  RegistrationPage:113 - entering firstName..firstName
+2018-01-18 18:07:15 INFO  RegistrationPage:118 - entering lastname..lastname
+2018-01-18 18:07:16 INFO  RegistrationPage:128 - entering password..password
+2018-01-18 18:07:16 INFO  RegistrationPage:191 - entering address..address
+2018-01-18 18:07:17 INFO  RegistrationPage:176 - entering yourAddressFirstName..yourAddressFirstName
+2018-01-18 18:07:17 INFO  RegistrationPage:181 - entering yourAddressLastName..yourAddressLastName
+2018-01-18 18:07:18 INFO  RegistrationPage:186 - entering yourAddressCompany..yourAddressCompany
+2018-01-18 18:07:18 INFO  RegistrationPage:201 - entering yourAddressCity..yourAddressCity
+2018-01-18 18:07:18 INFO  RegistrationPage:206 - entering yourAddressState..Alaska
+2018-01-18 18:07:19 INFO  RegistrationPage:211 - entering yourAddressPostCode..99501
+2018-01-18 18:07:19 INFO  RegistrationPage:226 - entering mobilePhone..9999999999
+2018-01-18 18:07:19 INFO  RegistrationPage:231 - entering addressAlias..addressAlias
+2018-01-18 18:07:19 INFO  RegistrationPage:236 - clicked on registration..[[ChromeDriver: chrome on XP (4945a29f6ead3d20021b4801b1287432)] -> xpath: //*[@id='submitAccount']]
+2018-01-18 18:07:22 INFO  WaitHelper:62 - element found...ORDER HISTORY AND DETAILS
+2018-01-18 18:07:22 INFO  VerificationHelper:21 - Welcome to your account. Here you can manage all of your personal information and orders. is dispalyed
+2018-01-18 18:07:22 INFO  Registration:59 - Registration is sucessful

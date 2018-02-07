@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<de.silpion.jenkins.plugins.gitflow.GitflowBuildWrapper_-DescriptorImpl plugin="gitflow@1.0.1">
+  <masterBranch>master</masterBranch>
+  <developBranch>develop</developBranch>
+  <releaseBranchPrefix>release/</releaseBranchPrefix>
+  <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+  <featureBranchPrefix>feature/</featureBranchPrefix>
+  <versionTagPrefix></versionTagPrefix>
+  <markSuccessfulBuildUnstableOnBrokenBranches>false</markSuccessfulBuildUnstableOnBrokenBranches>
+</de.silpion.jenkins.plugins.gitflow.GitflowBuildWrapper_-DescriptorImpl>

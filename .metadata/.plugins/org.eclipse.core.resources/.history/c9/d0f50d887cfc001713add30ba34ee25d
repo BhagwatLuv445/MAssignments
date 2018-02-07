@@ -1,0 +1,13 @@
+url =http://demo.guru99.com/V4/
+username = uid
+password = password
+title = barone
+loginButton=btnLogin
+resetButton=btnReset
+browser = chrome
+browserPath =.\\Resources\\com\\Ferrari_F1_Club\\Browser\\chromedriver.exe
+			
+browserDriver = webdriver.chrome.driver
+
+Log4jPropertiesFilePath = .\\Resources\\com\\Ferrari_F1_Club\\Properties\\log4j.properties
+

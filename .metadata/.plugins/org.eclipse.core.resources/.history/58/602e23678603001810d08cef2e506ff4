@@ -1,0 +1,73 @@
+package com.Ferrari_F1_Club.Locators;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import com.Ferrari_F1_Club.Base.TestBase;
+
+public class ShopPageLocators extends TestBase{
+
+	@FindBy(how = How.XPATH, using ="//mat-toolbar-row/button[6]")
+	protected WebElement shopPageLinkBtn;
+	
+	@FindBy(how = How.XPATH, using ="//ul[1]//button[contains(text(),'Jackets and vests')]")
+	protected WebElement mensJacket;
+	
+	@FindBy(how = How.XPATH, using ="//ul[4]//button[contains(text(),'Jackets and vests')]")
+	protected WebElement womensJacket;
+	
+	@FindBy(how = How.XPATH, using ="//ul[1]//button[contains(text(),'T-shirts')]")
+	protected WebElement mensTshirts;
+	
+	@FindBy(how = How.XPATH, using ="//ul[4]//button[contains(text(),'T-shirts')]")
+	protected WebElement womenTshirts;
+	
+	@FindBy(how = How.XPATH, using ="//ul[1]//button[contains(text(),'Trousers')]")
+	protected WebElement mensTrousers;
+	
+	@FindBy(how = How.XPATH, using ="//ul[4]//button[contains(text(),'Trousers')]")
+	protected WebElement womenTrousers;
+	
+	@FindBy(how = How.XPATH, using ="//ul[1]//button[contains(text(),'Shirts')]")
+	protected WebElement mensShirts;
+	
+	@FindBy(how = How.XPATH, using ="//ul[4]//button[contains(text(),'T-shirts')]")
+	protected WebElement womenShirts;
+	
+	@FindBy(how = How.XPATH, using ="//ul[2]//button[contains(text(),'watches')]")
+	protected WebElement mensWatches;
+	
+	@FindBy(how = How.XPATH, using ="//ul[5]//button[contains(text(),'watches')]")
+	protected WebElement womenWatches;
+	
+	@FindBy(how = How.XPATH, using ="//ul[2]//button[contains(text(),'Bags and Trolley')]")
+	protected WebElement mensBagsAndTrolley;
+	
+	@FindBy(how = How.XPATH, using ="//ul[5]//button[contains(text(),'Bags and Trolley')]")
+	protected WebElement womenBagsAndTrolley;
+	
+	@FindBy(how = How.XPATH, using ="//ul[2]//button[contains(text(),'Caps')]")
+	protected WebElement mensCap;
+	
+	@FindBy(how = How.XPATH, using ="//ul[2]//button[contains(text(),'Caps')]")
+	protected WebElement womenCap;
+	
+	@FindBy(how = How.XPATH, using ="//ul[2]//button[contains(text(),'Wallets')]")
+	protected WebElement mensWallets;
+	
+	@FindBy(how = How.XPATH, using ="//ul[5]//button[contains(text(),'Wallets')]")
+	protected WebElement womenWallets;
+	
+	@FindBy(how = How.XPATH, using ="//ul[3]//button[contains(text(),'Tod's for ferrari')]")
+	protected WebElement mensTods;
+	
+	@FindBy(how = How.XPATH, using ="//ul[6]//button[contains(text(),'Tod's for ferrari')]")
+	protected WebElement womenTods;
+	
+	@FindBy(how = How.XPATH, using ="//ul[3]//button[contains(text(),'Sneakers Puma')]")
+	protected WebElement mensSneakers;
+	
+	@FindBy(how = How.XPATH, using ="//ul[6]//button[contains(text(),'Sneakers Puma')]")
+	protected WebElement womenSneakers;
+}

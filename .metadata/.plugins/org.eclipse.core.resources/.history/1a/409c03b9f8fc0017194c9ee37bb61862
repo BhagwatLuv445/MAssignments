@@ -1,0 +1,11 @@
+package Utility;
+
+public class TToolsQaDataProvider {
+
+	
+	@DataProvider(name = "toolsQa")
+	public static Object[][] getToolsQaData(){
+		
+	}
+	
+}

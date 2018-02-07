@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b3ad57e7-99a1-4e4a-8cf8-f195fca473da" activeEnvironment="Default" name="FerrariMen" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="8e768567-5003-411d-bf2f-904953a5991a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ferrariclubserverdev.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ferrariclubserverdev.azurewebsites.net</con:endpoint></con:endpoints><con:resource name="Id" path="/Ferrari/men/catageory/{id}" id="3b44435f-8146-4ede-b1e6-66d75d41a057"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Id 1" id="857aa39a-3c9b-4435-8e5e-78df6b75bd0c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="d1bde107-e63f-4c32-9004-7cb058681b0d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ferrariclubserverdev.azurewebsites.net</con:endpoint><con:request/><con:originalUri>https://ferrariclubserverdev.azurewebsites.net/Ferrari/men/catageory/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="909929db-ed25-4736-9171-debe36e15143" name="Category"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="85c37c51-b1f4-4c0a-a77d-362eefe02a4e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="men" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Id" id="fa775340-7b65-4170-93fa-b79b460f142c"><con:settings/><con:config service="https://ferrariclubserverdev.azurewebsites.net" resourcePath="/Ferrari/men/catageory/{id}" methodName="Id 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Id" id="d1bde107-e63f-4c32-9004-7cb058681b0d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ferrariclubserverdev.azurewebsites.net</con:endpoint><con:request/><con:originalUri>https://ferrariclubserverdev.azurewebsites.net/Ferrari/men/catageory/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="write" id="252ab926-c05d-4897-b048-6b0b5b77361a"><con:settings/><con:config><script>import jxl.*
+import jxl.write.*
+
+WritableWorkbook workbook = Workbook.createWorkbook(new File("D:\\write.xls"))
+WritableSheet sheet = workbook.createSheet("pagal",0)
+Label label = new Label(0,1,"MALAY")
+sheet.addCell(label)
+Label label1 = new Label(1,4,"japan")
+sheet.addCell(label1)
+workbook.write()
+workbook.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Read" id="d683c51b-3fc0-49ac-94a3-cacac1c5f7f4"><con:settings/><con:config><script>import jxl.*
+import jxl.write.*
+
+Workbook workbook = Workbook.getWorkbook(new File("D:\\write.xls"))
+Sheet sheet1 = workbook.getSheet(0)
+Cell a1 = sheet1.getCell(0,1)
+//if( sheet1.getCell(2,4).getContents()==null)
+//log.info ("false")
+
+log.info (a1.getContents())
+//log.info (a2.getContents())
+
+workbook.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="f2923eb2-8209-4cc0-afe9-eb24c528f01b"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def abc = testRunner.runTestStepByName("Id")
+def response = abc.getResponse()
+def jsonStr = response.getContentAsString()
+
+JsonSlurper serializer = new JsonSlurper()
+def object = serializer.parseText(jsonStr)
+
+log.info object.category[0].category_id</script></con:config></con:testStep><con:testStep type="groovy" name="WriteResponse" id="fc0061c8-ee7f-4eba-ae73-9aa568383779"><con:settings/><con:config><script>import jxl.*
+import jxl.write.*
+import groovy.json.JsonSlurper
+
+def v1 = testRunner.testCase.testSuite.getPropertyValue("path")
+def v2 = testRunner.testCase.testSteps['Parameters'].getPropertyValue("endpath")
+def v3 = v1 + v2
+
+WritableWorkbook workbook= Workbook.createWorkbook(new File(v3))
+WritableSheet sheet = workbook.createSheet("pagal",0)
+
+def respList = testRunner.runTestStepByName("Id")
+def res = respList.getResponse()
+def str = res.getContentAsString()
+JsonSlurper js = new JsonSlurper()
+
+def obj = js.parseText(str)
+def len = obj[0].size()
+def obj1 = obj.toString()
+
+def ch = [] as char[]
+ch = obj1.toCharArray()
+StringBuffer sb = new StringBuffer()
+for(int i = 0; i &lt; ch.size(); i++)
+{
+	if(ch[i] == '[' || ch[i] == ']')
+	{
+	
+	}
+	else
+	{
+	sb.append(ch[i])
+	}
+}
+def st = [] as String[]
+st = sb.tokenize(',')
+def n = 1
+def limit = st.size()
+def v = 0
+for(int i = 0; i &lt; st.size(); i++)
+{
+	if(v > len-1)
+	{
+		n = n + 1
+		v = 0	
+	}	
+	def st1 = [] as String[]
+	st1 = st[i].tokenize(':')
+	Label label = new Label(0,v,st1[0])
+	sheet.addCell(label)
+	Label label1 = new Label(n,v,st1[1])
+	sheet.addCell(label1)
+	v++
+}
+workbook.write()
+workbook.close()</script></con:config></con:testStep><con:testStep type="properties" name="Parameters" id="e3ba1f7f-48b5-47b4-9401-b9cc52941852"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>endpath</con:name><con:value>write.xls</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>path</con:name><con:value>D:\\</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

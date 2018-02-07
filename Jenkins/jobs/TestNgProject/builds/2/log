@@ -1,0 +1,66 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Selenium_WorkSpace\GmailEmail
+[GmailEmail] $ cmd.exe /C "mvn -f D:\Selenium_WorkSpace\GmailEmail\pom.xml clean install && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GmailEmail 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4IXeqcU8FNV2iRZ+Yd7Ss2ReowwTBgTpC0NqYt02OV1LAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ GmailEmail ---
+[INFO] Deleting D:\Selenium_WorkSpace\GmailEmail\target
+[INFO] 
+[8mha:////4IXeqcU8FNV2iRZ+Yd7Ss2ReowwTBgTpC0NqYt02OV1LAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ GmailEmail ---
+[8mha:////4EoO9CXO3Ynf+8XZHQRiPUnvhQTNlFvFoIlesxLrZzNIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4IXeqcU8FNV2iRZ+Yd7Ss2ReowwTBgTpC0NqYt02OV1LAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ GmailEmail ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4EoO9CXO3Ynf+8XZHQRiPUnvhQTNlFvFoIlesxLrZzNIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 14 source files to D:\Selenium_WorkSpace\GmailEmail\target\classes
+[INFO] -------------------------------------------------------------
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[8,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[9,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[10,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[28,10] cannot find symbol
+  symbol:   class BeforeMethod
+  location: class com.gmailEmail.testCases.GmailTest
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[37,10] cannot find symbol
+  symbol:   class Parameters
+  location: class com.gmailEmail.testCases.GmailTest
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[38,10] cannot find symbol
+  symbol:   class Test
+  location: class com.gmailEmail.testCases.GmailTest
+[INFO] 6 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.703 s
+[INFO] Finished at: 2018-01-23T12:29:34+05:30
+[INFO] Final Memory: 17M/121M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project GmailEmail: Compilation failure: Compilation failure: 
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[8,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[9,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[10,30] package org.testng.annotations does not exist
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[28,10] cannot find symbol
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   symbol:   class BeforeMethod
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[37,10] cannot find symbol
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   symbol:   class Parameters
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[38,10] cannot find symbol
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   symbol:   class Test
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4NcJoPW9g/e6Fi3uVj4DNnIbOWsfsBERVh9OoKDzZSdkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

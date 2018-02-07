@@ -1,0 +1,16 @@
+package Utility;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+
+public class ToolsQaDataProvider {
+
+	@DataProvider(name = "hybridData")
+	public static Object[][] getToolsQaData() throws Exception
+	{
+		Object[][] map = ExcelRead.getData("KeywordFramework");
+		return map;
+	}
+
+}

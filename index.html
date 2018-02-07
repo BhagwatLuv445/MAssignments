@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MY Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <style>
+        /*.form {
+            padding-top: 50px;
+            padding-left: 700px;
+        }
+        */
+        
+        body {
+            background-image: url("images.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .radio-group .not-active {
+            color: #3276b1;
+            background-color: #fff;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        #id {
+            padding-bottom: 200px;
+        }
+
+        #show{
+            display: none;
+        }
+    </style>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script>
+        function openSignUp() {
+            document.getElementById("show").style.display="inline-block";
+        }
+
+         function validate() {
+            var password = document.myform.password.value;
+            console.log("function call")
+            var cnrmpassword = document.myform.confirmpassword.value;
+
+            var passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+
+            var email = document.myform.email.value;
+
+            var pattern = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/;
+
+            if (!((document.myform.firstname.value).match("[a-zA-Z]")) || (document.myform.firstname.value).length < 5) 
+            {                
+                    alert("Please give first name in proper format");
+                    document.myform.firstname.value = "";
+                    return false;    
+            }
+            else if (!((document.myform.lastname.value).match("[a-zA-Z]")) || (document.myform.lastname.value).length < 5) 
+            {            
+                    alert("Please give Last name in proper format");
+                    document.myform.lastname.value = "";
+                    return false;            
+            }
+            else if (!(email.match(pattern))) 
+            {
+                alert("invalid email");
+                document.myform.email.value = "";
+                return false;
+            }
+            else if (!(password.match(passPattern))) 
+            {
+                //alert("Password must be 6 character long");
+                alert("Password must contains 1 Lower, 1 Upper, and 1 Number and should be 8 character long");
+                document.myform.password.value = "";
+                document.myform.confirmpassword.value = "";
+                return false;
+            }
+            else if (cnrmpassword != password) 
+            {
+                //alert("Password missMatch");
+                alert("Confirm Password must be same");
+                 document.myform.confirmpassword.value = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Bug-Finder</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" onclick="openSignUp();"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+        <div class="row" style="height: 100px;"> </div>
+        <div class="row">
+            <div id="show" class="col-sm-4 col-sm-offset-4 col-xs-12">
+                <form class="form" name="myform" onsubmit="return validate()">
+                    <div class="input-group">
+                        <span class="input-group-addon "><i class="glyphicon glyphicon-pencil"></i></span>
+                        <input type="text" class="form-control" id="firstname" placeholder="Firstname" aria-describedby="basic-addon1" name="firstname"
+                            required="required">
+                    </div><br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <input type="text" class="form-control" id="lastname" placeholder="Lastname" aria-describedby="basic-addon1" name="lastname"
+                            required="required">
+                    </div><br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon2" name="email">
+
+                    </div><br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" name="password" >
+                        
+                    </div><br>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1" name="confirmpassword">
+                    </div>
+                    <div style="margin-top:10px;">
+                        <span class="col-md-5 input-group-addon" for="gender" style="width: 8%;"><i class="glyphicon glyphicon-user"></i></span>
+                        <div class="col-md-7" style="border-left: 1px #E0E0E0 solid;  height: 29px;">
+                            <div class="input-group">
+                                <div class="btn-group radio-group">
+                                    <label class="radio-inline"><input type="radio" name="optradio" checked>Male</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <input class="btn btn-secondary" type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

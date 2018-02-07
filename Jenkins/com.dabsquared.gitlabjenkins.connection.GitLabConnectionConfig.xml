@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.dabsquared.gitlabjenkins.connection.GitLabConnectionConfig plugin="gitlab-plugin@1.5.2">
+  <useAuthenticatedEndpoint>false</useAuthenticatedEndpoint>
+  <connections>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnection>
+      <name>Git</name>
+      <url>https://glcgitlab.southindia.cloudapp.azure.com</url>
+      <apiTokenId>8bea63bd-2e1e-4302-ac22-0fc97dcc3045</apiTokenId>
+      <clientBuilder class="com.dabsquared.gitlabjenkins.gitlab.api.impl.AutodetectGitLabClientBuilder">
+        <id>autodetect</id>
+        <ordinal>0</ordinal>
+      </clientBuilder>
+      <ignoreCertificateErrors>true</ignoreCertificateErrors>
+      <connectionTimeout>10</connectionTimeout>
+      <readTimeout>10</readTimeout>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnection>
+  </connections>
+</com.dabsquared.gitlabjenkins.connection.GitLabConnectionConfig>

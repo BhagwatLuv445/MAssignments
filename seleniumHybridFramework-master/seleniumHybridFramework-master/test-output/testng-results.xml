@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32035" started-at="2018-01-18T12:36:50Z" finished-at="2018-01-18T12:37:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32035" started-at="2018-01-18T12:36:50Z" finished-at="2018-01-18T12:37:22Z">
+      <class name="com.hybridFramework.registration.Registration">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5]" name="launchBrowser" is-config="true" duration-ms="3793" started-at="2018-01-18T18:06:50Z" finished-at="2018-01-18T18:06:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2018-01-18T18:06:54Z" finished-at="2018-01-18T18:06:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.registration.Registration.testLoginToApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLoginToApplication()[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5]" name="testLoginToApplication" duration-ms="27692" started-at="2018-01-18T18:06:54Z" finished-at="2018-01-18T18:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginToApplication -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-01-18T18:07:22Z" finished-at="2018-01-18T18:07:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginToApplication status=SUCCESS method=Registration.testLoginToApplication()[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.hybridFramework.registration.Registration@550ee7e5]" name="endTest" is-config="true" duration-ms="503" started-at="2018-01-18T18:07:22Z" finished-at="2018-01-18T18:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.hybridFramework.registration.Registration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

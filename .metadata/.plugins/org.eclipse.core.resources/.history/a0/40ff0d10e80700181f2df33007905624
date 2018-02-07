@@ -1,0 +1,49 @@
+package com.Amazon.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.Amazon.Interfaces.IHomePage;
+import com.Amazon.PageObject.AddToCartConfirmPage;
+import com.Amazon.PageObject.HomePage;
+import com.Amazon.PageObject.LoginPage;
+import com.Amazon.PageObject.ProductsDetailsPage;
+import com.Amazon.PageObject.ProductsPage;
+import com.Amazon.Utility.TestBase;
+
+public class HomePageTest extends TestBase {
+
+	IHomePage homePage =new HomePage();
+/*
+	public HomePageTest() {
+		super();
+		homePage = new HomePage();
+	}*/
+	
+	/*
+	 * @BeforeMethod public void setUp(){ homePage = new HomePage(); }
+	 */
+
+	@Test(priority = 0)
+	public void AmazonTest() throws InterruptedException {
+		LoginPage loginPage = homePage.signInHoverBtn();
+		loginPage.enterEmail("7000426261");
+		loginPage.clkContinueBtn();
+		loginPage.enterPassword("9752509094");
+		loginPage.clkLoginBtn();
+		ProductsPage productsPage = homePage.searchItem("refrigerator");
+		if (productsPage != null) {
+			System.out.println("null value");
+		}
+		String itemTitle = productsPage.getFirstResultTitle();
+		ProductsDetailsPage productDetailsPage = productsPage.clickFirstResultTitle();
+		assert (productDetailsPage.getProductTitle().equals(itemTitle));
+	    //AddToCartConfirmPage addToCartConfirmPage = productDetailsPage.addToCart();
+		//assert (addToCartConfirmPage.getConfirmationText().equals("1 item added to Cart"));
+
+	}
+
+	/*
+	 * @Test(priority = 1) public void clksignInBtn(){
+	 * homePage.clksignInBtn(log); }
+	 */
+}

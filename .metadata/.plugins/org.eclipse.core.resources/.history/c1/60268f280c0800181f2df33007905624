@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package com.Ferrari_F1_Club.Locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+/**
+ * @author M1042961
+ *
+ */
+public class FerrariShoppingPageLocators {
+	WebDriver driver;
+	public FerrariShoppingPageLocators(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(how=How.XPATH, using="/html/body/app-root/app-shopping-content/div/app-shopping-main/div/div[1]/div/div/img")
+	protected WebElement jacket;
+	
+	@FindBy(how=How.XPATH, using="/html/body/app-root/app-product-description/div/div/div[2]/mat-card/div/div[1]/div[2]/button")
+	protected WebElement addToCart;
+	
+	@FindBy(how=How.XPATH, using="//div[@class='back']//following::button[2]")
+	protected WebElement proceed;
+	
+	@FindBy(how=How.XPATH, using="//*[@id=\"mat-select-0\"]")
+	protected WebElement quantity;
+	
+	@FindBy(how=How.XPATH, using="//*[@id='mat-option-1']")
+	protected WebElement quantityVal;
+	
+	@FindBy(how=How.XPATH, using="//*[@class='button-row']//following::button[2]")
+	protected WebElement buy;
+	
+
+}

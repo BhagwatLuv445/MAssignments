@@ -1,0 +1,67 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Selenium_WorkSpace\GmailEmail
+[GmailEmail] $ cmd /c call D:\tools\apache-tomcat-8.5.23\apache-tomcat-8.5.23\temp\jenkins337324846614693328.bat
+
+D:\Selenium_WorkSpace\GmailEmail>test.bat
+
+D:\Selenium_WorkSpace\GmailEmail>mvn test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GmailEmail 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ GmailEmail ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ GmailEmail ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 14 source files to D:\Selenium_WorkSpace\GmailEmail\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[8,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[9,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[10,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[28,10] cannot find symbol
+  symbol:   class BeforeMethod
+  location: class com.gmailEmail.testCases.GmailTest
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[37,10] cannot find symbol
+  symbol:   class Parameters
+  location: class com.gmailEmail.testCases.GmailTest
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[38,10] cannot find symbol
+  symbol:   class Test
+  location: class com.gmailEmail.testCases.GmailTest
+[INFO] 6 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.127 s
+[INFO] Finished at: 2018-01-23T12:20:20+05:30
+[INFO] Final Memory: 17M/120M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project GmailEmail: Compilation failure: Compilation failure: 
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[8,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[9,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[10,30] package org.testng.annotations does not exist
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[28,10] cannot find symbol
+[ERROR]   symbol:   class BeforeMethod
+[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[37,10] cannot find symbol
+[ERROR]   symbol:   class Parameters
+[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[ERROR] /D:/Selenium_WorkSpace/GmailEmail/src/com/gmailEmail/testCases/GmailTest.java:[38,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.gmailEmail.testCases.GmailTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

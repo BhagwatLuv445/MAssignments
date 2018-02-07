@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: arthur.vanduynhoven
+Build-Jdk: 1.8.0_121
+Extension-Name: git-prebuildmerge-trait
+Specification-Title: Adds PreBuildMerge Trait to Git Plugin
+Implementation-Title: git-prebuildmerge-trait
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: git-prebuildmerge-trait
+Long-Name: Git PreBuildMerge Trait Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Dependencies: git-client:2.5.0,git:3.5.1,scm-api:2.2.0
+Plugin-Developers: Arthur Van Duynhoven:arthurvanduynhoven:
+

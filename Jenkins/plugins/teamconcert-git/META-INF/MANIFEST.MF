@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kk
+Build-Jdk: 1.6.0_65
+Extension-Name: teamconcert-git
+Specification-Title: Integrates Jenkins with Rational Team Concert for
+  Jenkins Builds which use Git as source control. This plugin will cre
+ ate tracebility links from a Jenkins build to RTC work items and buil
+ d result.
+Implementation-Title: teamconcert-git
+Implementation-Version: 1.0.10
+Group-Id: org.jenkins-ci.plugins
+Short-Name: teamconcert-git
+Long-Name: Team Concert Git Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Team+Concert+Git+Plugin
+Plugin-Version: 1.0.10
+Hudson-Version: 1.480.3
+Jenkins-Version: 1.480.3
+Plugin-Dependencies: credentials:1.16.1
+Plugin-Developers: Krishna Kishore:clkkishore:clkkishore@gmail.com
+

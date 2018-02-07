@@ -1,0 +1,6 @@
+2018-01-16 12:21:42,719 [main] INFO org.apache.commons.logging.Log - Browser open
+2018-01-16 12:21:44,135 [main] INFO org.apache.commons.logging.Log - Maximizing Window
+2018-01-16 12:21:46,835 [main] INFO org.apache.commons.logging.Log - Launching the Application
+2018-01-16 12:24:12,155 [main] INFO org.apache.commons.logging.Log - OnlineStore file downloaded successfully
+2018-01-16 12:24:47,478 [main] INFO org.apache.commons.logging.Log - Test-File-to-Download successfully
+2018-01-16 12:24:48,941 [main] INFO org.apache.commons.logging.Log - TearDown the Browser

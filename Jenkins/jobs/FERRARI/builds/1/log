@@ -1,0 +1,23 @@
+Started by user [8mha:////4Pp1PEaIKlhibbnKJ7aEIy8L3kTsIVGDr7JONbYHGedBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace D:\Apps\Jenkins\workspace\FERRARI
+Cloning the remote Git repository
+Cloning repository git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe init D:\Apps\Jenkins\workspace\FERRARI # timeout=10
+Fetching upstream changes from git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_SSH to set credentials 
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git # timeout=10
+Fetching upstream changes from git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git
+using GIT_SSH to set credentials 
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress git@glcgitlab.southindia.cloudapp.azure.com:fse-nov-2017-projects/sdet-nov-2017-projects/AvanishTeam/FerrariF1Nov/FerrariF1Nov.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 96708830e57a99c87a13125d1542f2d5e214d03c (refs/remotes/origin/master)
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\M1043004\AppData\Local\Programs\Git\cmd\git.exe checkout -f 96708830e57a99c87a13125d1542f2d5e214d03c
+Commit message: "Addition of methods in previous classe"
+First time build. Skipping changelog.
+Finished: SUCCESS

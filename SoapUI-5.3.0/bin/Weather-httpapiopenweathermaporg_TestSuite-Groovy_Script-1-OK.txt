@@ -1,0 +1,8 @@
+Status: OK
+Time Taken: 893
+Size: 0
+Timestamp: Fri Feb 02 17:07:25 IST 2018
+TestStep: Groovy Script
+
+----------------- Messages ------------------------------
+Script-result: {id=1275841, dt=1517569200, clouds={all=0}, coord={lon=77.4, lat=23.25}, wind={speed=1.5, deg=270}, cod=200, visibility=6000, sys={message=0.0028, id=7765, sunset=1517575113, sunrise=1517534998, type=1, country=IN}, name=Bhopal, base=stations, weather=[{id=800, icon=01d, description=clear sky, main=Clear}], main={humidity=20, pressure=1012, temp_max=303.15, temp_min=303.15, temp=303.15}}

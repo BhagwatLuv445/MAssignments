@@ -1,0 +1,109 @@
+package TestCases;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import Operation.ReadObject;
+import Operation.UIOperation;
+import Utility.ExcelRead;
+
+public class TestImplement {
+
+	static WebDriver webdriver;
+
+	
+	public static void setUp() {
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\MySeleniumWorkSpace\\HybridFrameWork\\src\\test\\java\\Drivers\\chromedriver.exe");
+		webdriver = new ChromeDriver();
+		webdriver.manage().window().maximize();
+		webdriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+	}
+
+	/*	@Test
+	public void testLogin() throws Exception {
+
+		ExcelRead file = new ExcelRead();
+		ReadObject object = new ReadObject();
+		Properties allObjects = object.getObjectRepository();
+		UIOperation operation = new UIOperation(webdriver);
+		// Read keyword sheet
+		Sheet sheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "KeywordFramework");
+		// Find number of rows in excel file
+		int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
+		System.out.println(rowCount);
+		// Create a loop over all the rows of excel file to read it
+		for (int i = 1; i < rowCount + 1; i++) {
+			// Loop over all the rows
+
+			Row row = sheet.getRow(i);
+			// Check if the first cell contain a value, if yes, That means it is
+			// the new testcase name
+			System.out.println(new DataFormatter().formatCellValue(row.getCell(0)));
+			// System.out.println(row.getCell(0).getStringCellValue().length());
+			if (getCellData(row, 0).length() == 0) {
+				// Print testcase detail on console
+				System.out.println(getCellData(row, 1) + "----" + getCellData(row, 2) + "----" + getCellData(row, 3)
+						+ "----" + getCellData(row, 4));
+				// Call perform function to perform operation on UI
+				operation.perform(allObjects, getCellData(row, 1), getCellData(row, 2), getCellData(row, 3),
+						getCellData(row, 4));
+			} else {
+				// Print the new testcase name when it started
+				System.out.println("New Testcase->" + row.getCell(0).toString() + " Started");
+			}
+		}
+	}*/
+
+	public static String getCellData(Row row, int cellNumber) {
+		return new DataFormatter().formatCellValue(row.getCell(cellNumber));
+	}
+	// WebDriver webdriver = null;
+	@Test(dataProvider="hybridData")
+	public void testLogin(String testcaseName,String keyword,String objectName,String objectType,String value) throws Exception {
+		// TODO Auto-generated method stub
+
+		if(testcaseName!=null && testcaseName.length()!=0){
+			setUp();
+		}
+		ReadObject object = new ReadObject();
+		Properties allObjects = object.getObjectRepository();
+		UIOperation operation = new UIOperation(webdriver);
+		//Call perform function to perform operation on UI
+		operation.perform(allObjects, keyword, objectName,
+				objectType, value);
+
+	}
+	@DataProvider(name="hybridData")
+	public Object[][] getDataFromDataprovider() throws IOException{
+		Object[][] object = null;
+		ExcelRead file = new ExcelRead();
+		//Read keyword sheet
+		Sheet sheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "KeywordFramework");
+		//Find number of rows in excel file
+		int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
+		object = new Object[rowCount][5];
+		for (int i = 0; i < rowCount; i++) {
+			//Loop over all the rows
+			Row row = sheet.getRow(i+1);
+			//Create a loop to print cell values in a row
+			for (int j = 0; j < row.getLastCellNum(); j++) {
+				//Print excel data in console
+				object[i][j] = getCellData(row,j);
+			}
+		}
+		System.out.println("");
+		return object;    
+	}
+}
